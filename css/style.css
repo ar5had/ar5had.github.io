@@ -47,7 +47,6 @@ section{
 /* global and mixed styling ends */
 
 .nav{
-  height: 60px;
   background: #fff;
   position: fixed;
   overflow: hidden;
@@ -69,6 +68,7 @@ section{
 
 .nav > .col-xs-1_25{
   padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 .col-xs-1_25{
@@ -302,5 +302,30 @@ footer p:last-child{
     min-width: 209px;
   }
 
+}
+
+@media screen and (min-width: 800px) {
+
+  .col-xs-1_25{
+		float: none;
+		width: 40px;
+	}
+
+  .nav{
+		width: 40px;
+		border: solid 1px #eee;
+		position: fixed;
+		top: 50%;
+		right: 50px;
+		transform: translate(-50%, -50%);
+	}
+
+	.col-xs-1_25:last-child{
+		padding-bottom: 20px;
+	}
+
+  .wrapper{
+    padding-top: 0px;
+  }
 }
 /* media querry ends */
