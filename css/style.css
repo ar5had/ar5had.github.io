@@ -312,7 +312,8 @@ footer p:last-child{
 	}
 
   .nav{
-		width: 40px;
+    margin: auto;
+		width: 60px;
 		border: solid 1px #eee;
 		position: fixed;
 		top: 50%;
