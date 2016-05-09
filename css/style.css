@@ -308,7 +308,7 @@ footer p:last-child{
 
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
 
   .col-xs-1_25{
 		float: none;
