@@ -76,6 +76,10 @@ section{
   width: 12.5%;
 }
 
+img.navIcons:first-child{
+  border-radius: 50%;
+}
+
 img.navIcons{
   vertical-align: super;
 	width:20px !important;
