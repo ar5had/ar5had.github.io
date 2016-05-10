@@ -41,7 +41,7 @@ section{
   padding-top: 100px;
 }
 
-#logoName, button{
+#logoName, #sendButton{
   font-family: 'Montserrat', sans-serif;
 }
 /* global and mixed styling ends */
@@ -116,7 +116,7 @@ textarea, input{
   opacity: 1;
 }
 
-button.btn.btn-default{
+#sendButton.btn.btn-default{
   border: solid 2px #F6C37A;
   border-radius: 0;
   text-transform: uppercase;
@@ -131,7 +131,7 @@ button.btn.btn-default{
   font-weight: 500;
 }
 
-button.btn.btn-default:hover{
+#sendButton.btn.btn-default:hover{
   color: #fff;
   background-color: #F6C37A;
 }
