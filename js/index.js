@@ -257,56 +257,48 @@ window.onload = function() {
 	var elevator1 = new Elevator({
     element: document.querySelector('.elevator-button1'),
     targetElement: document.querySelector('#elevator-target1'),
-    mainAudio: '../js/music/elevator.mp3',
     endAudio: '../js/music/ding.mp3'
   });
 
 	 var elevator2 = new Elevator({
     element: document.querySelector('.elevator-button2'),
     targetElement: document.querySelector('#elevator-target2'),
-    mainAudio: '../js/music/elevator.mp3',
     endAudio: '../js/music/ding.mp3'
   });
 
 	var elevator3 = new Elevator({
     element: document.querySelector('.elevator-button3'),
     targetElement: document.querySelector('#elevator-target3'),
-    mainAudio: '../js/music/elevator.mp3',
     endAudio: '../js/music/ding.mp3'
   });
 
 	var elevator4 = new Elevator({
     element: document.querySelector('.elevator-button4'),
     targetElement: document.querySelector('#elevator-target4'),
-    mainAudio: '../js/music/elevator.mp3',
     endAudio: '../js/music/ding.mp3'
   });
 
 	var elevator5 = new Elevator({
     element: document.querySelector('.elevator-button5'),
     targetElement: document.querySelector('#elevator-target5'),
-    mainAudio: '../js/music/elevator.mp3',
     endAudio: '../js/music/ding.mp3'
   });
 
 	var elevator6 = new Elevator({
     element: document.querySelector('.elevator-button6'),
     targetElement: document.querySelector('#elevator-target6'),
-    mainAudio: '../jsmusic/elevator.mp3',
     endAudio: '../js/music/ding.mp3'
   });
 
 	var elevator7 = new Elevator({
     element: document.querySelector('.elevator-button7'),
     targetElement: document.querySelector('#elevator-target7'),
-    mainAudio: '../js/music/elevator.mp3',
     endAudio: '../js/music/ding.mp3'
   });
 
 	var elevator8 = new Elevator({
     element: document.querySelector('.elevator-button8'),
     targetElement: document.querySelector('#elevator-target8'),
-    mainAudio: '../js/music/elevator.mp3',
     endAudio: '../js/music/ding.mp3'
   });
 
