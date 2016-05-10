@@ -129,7 +129,7 @@ textarea, input{
   transition: color .4s;
   padding: 10px 15px;
   font-weight: 500;
-  width: 75px;
+  min-width: 75px;
 }
 
 #sendButton.btn.btn-default:hover{
