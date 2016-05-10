@@ -51,7 +51,6 @@ section{
   position: fixed;
   overflow: hidden;
   z-index: 10000;
-  border-bottom: solid 1px #eee;
   max-width: 540px;
   padding: 0;
 }
@@ -59,7 +58,6 @@ section{
 .navItems{
   width: 20px;
   height: 20px;
-  border: solid 1px #eee;
   border-radius: 50%;
   display: inline-flex;
   text-decoration: none;
@@ -83,6 +81,7 @@ img.navIcons:first-child{
 img.navIcons{
   vertical-align: super;
 	width:20px !important;
+  border: 2px solid #eee;
 }
 /* nav styling ends */
 
