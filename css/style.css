@@ -46,47 +46,6 @@ section{
 }
 /* global and mixed styling ends */
 
-.nav{
-  background: #fff;
-  position: fixed;
-  overflow: hidden;
-  z-index: 10000;
-  max-width: 540px;
-  padding: 0;
-  border-bottom: 2px solid #eee;
-}
-
-.navItems{
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  display: inline-flex;
-  text-decoration: none;
-  cursor: pointer;
-  border: 2px solid #eee;
-}
-
-.nav > .col-xs-1_25{
-  padding-top: 20px;
-  padding-bottom: 10px;
-}
-
-.col-xs-1_25{
-  float: left;
-  width: 12.5%;
-}
-
-img.navIcons:first-child{
-  border-radius: 50%;
-}
-
-img.navIcons{
-  vertical-align: super;
-	width:20px !important;
-  display: none;
-}
-/* nav styling ends */
-
 #logoName{
   font-weight: 600;
   font-size: 3.3em;
@@ -332,6 +291,10 @@ footer p:last-child{
 
   .wrapper{
     padding-top: 0px;
+  }
+
+  .navItems{
+    border: 2px solid #eee;
   }
 }
 /* media querry ends */
