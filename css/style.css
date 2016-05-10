@@ -130,7 +130,7 @@ textarea, input{
   transition: color .4s;
   padding: 12px 15px 13px 15px;
   font-weight: 500;
-  min-width: 75px;
+  width: 75px !important;
   height: 44px;
 }
 
@@ -267,6 +267,10 @@ footer p:last-child{
 
   textarea, input{
     width: 209px;
+  }
+
+  #sendButton{
+    width: 75px;
   }
 
 }
