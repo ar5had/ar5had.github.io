@@ -251,3 +251,12 @@ var Elevator = function(options) {
 
     init(options);
 };
+
+function thanks(){
+  var nameVal = document.getElementById('name').checkValidity();
+  var emailVal = document.getElementById('email').checkValidity();
+  var textareaVal = document.getElementById('message').checkValidity();
+  if(nameVal && emailVal && textareaVal){
+    document.getElementById('sendButton').setAttribute('value','thanks!');
+  }
+}
