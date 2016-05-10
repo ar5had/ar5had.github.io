@@ -53,6 +53,7 @@ section{
   z-index: 10000;
   max-width: 540px;
   padding: 0;
+  border-bottom: 1px solid #eee;
 }
 
 .navItems{
@@ -322,6 +323,7 @@ footer p:last-child{
 		top: 50%;
 		right: 50px;
 		transform: translate(-50%, -50%);
+    border: none;
 	}
 
 	.col-xs-1_25:last-child{
