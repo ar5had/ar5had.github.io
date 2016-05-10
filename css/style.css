@@ -82,6 +82,7 @@ img.navIcons{
   vertical-align: super;
 	width:20px !important;
   border: 2px solid #eee;
+  display: none;
 }
 /* nav styling ends */
 
@@ -317,7 +318,6 @@ footer p:last-child{
 
   .nav{
 		width: 60px;
-		border: solid 2px #eee;
 		position: fixed;
 		top: 50%;
 		right: 50px;
