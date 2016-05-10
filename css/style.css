@@ -127,9 +127,10 @@ textarea, input{
   -moz-transition: color .4s;
   -webkit-transition: color .4s;
   transition: color .4s;
-  padding: 10px 15px;
+  padding: 13px 15px;
   font-weight: 500;
   min-width: 75px;
+  height: 44px;
 }
 
 #sendButton.btn.btn-default:hover{
