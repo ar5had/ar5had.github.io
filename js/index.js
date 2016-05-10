@@ -257,6 +257,7 @@ function thanks(){
   var emailVal = document.getElementById('email').checkValidity();
   var textareaVal = document.getElementById('message').checkValidity();
   if(nameVal && emailVal && textareaVal){
+    document.getElementById('sendButton').setAttribute('style','width: 97px;');
     document.getElementById('sendButton').setAttribute('value','thanks!');
   }
 }
