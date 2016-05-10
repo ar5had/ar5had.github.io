@@ -257,7 +257,7 @@ footer p:last-child{
 
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 520px) {
   .icon{
     width: 70px;
   }
