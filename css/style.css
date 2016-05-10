@@ -268,33 +268,4 @@ footer p:last-child{
 
 }
 
-@media screen and (min-width: 900px) {
-
-  .col-xs-1_25{
-		float: none;
-		width: 40px;
-    margin: auto;
-	}
-
-  .nav{
-		width: 60px;
-		position: fixed;
-		top: 50%;
-		right: 50px;
-		transform: translate(-50%, -50%);
-    border: none;
-	}
-
-	.col-xs-1_25:last-child{
-		padding-bottom: 20px;
-	}
-
-  .wrapper{
-    padding-top: 0px;
-  }
-
-  .navItems{
-    border: 2px solid #eee;
-  }
-}
 /* media querry ends */
