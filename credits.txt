@@ -1,5 +1,7 @@
 Site Credits
 
+Inspired from Addy Osmani site.
+
 Elevator.js - https://github.com/tholman/elevator.js
 
 Icons - https://www.iconfinder.com/PixelBuddha

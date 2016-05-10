@@ -86,7 +86,7 @@ textarea{
 }
 
 textarea, input{
-  min-width: 300px;
+  width: 300px;
   font-size: 16px;
   color: #aaa;
   padding-left: 10px;
@@ -266,7 +266,7 @@ footer p:last-child{
   }
 
   textarea, input{
-    min-width: 209px;
+    width: 209px;
   }
 
 }
