@@ -89,7 +89,7 @@ textarea, input{
   font-size: 16px;
   color: #aaa;
   padding-left: 10px;
-  padding-left: 10px;
+  padding-right: 10px;
 }
 
 ::-webkit-input-placeholder {
