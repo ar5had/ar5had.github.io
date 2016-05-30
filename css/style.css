@@ -166,6 +166,7 @@ footer{
 .fa{
   font-size: 11px;
   vertical-align: middle;
+  padding: 0 0 3px 0;
 }
 
 .fa-github{
