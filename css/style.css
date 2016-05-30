@@ -149,9 +149,10 @@ footer{
 }
 
 .social-icons{
-  height: 30px;
-  width: 30px;
+  height: 28px;
+  width: 28px;
   margin: 0 2px;
+  display: inline-block;
 }
 
 .fa{
@@ -163,10 +164,8 @@ footer{
 }
 
 .fa{
-  height: 24px;
-  width: 24px;
-  font-size: 12px;
-  line-height: 24px;
+  font-size: 11px;
+  vertical-align: middle;
 }
 
 .fa-github{
@@ -176,7 +175,6 @@ footer{
 .si-github{
  border: solid 2px #4183c4;
   background-color: none;
-  -webkit-transition: background 1.5s;
 }
 
 .si-github:hover{
@@ -222,6 +220,7 @@ footer{
 .fa-envelope{
   color: #222;
   font-weight: 600;
+  vertical-align: middle;
 }
 
 .si-envelope{
