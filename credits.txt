@@ -8,4 +8,4 @@ Icons - https://www.iconfinder.com/PixelBuddha
 
 Framework - bootstrap
 
-Hosting - github
+
