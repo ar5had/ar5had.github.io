@@ -38,11 +38,11 @@ p{
 }
 
 section{
-  padding-top: 100px;
+  padding-top: 70px;
 }
 
 #logoName, #sendButton{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif !important;
 }
 /* global and mixed styling ends */
 
