@@ -156,7 +156,9 @@ textarea, input{
 
 a, a>p, a:active, a:hover, a>p:active, a>p:hover {
   text-decoration: none !important;
+  outline: none !important;
 }
+
 
 /* contact form section styling ends */
 
