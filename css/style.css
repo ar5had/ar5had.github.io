@@ -60,10 +60,10 @@ header{
 }
 
 .paraLinks{
-color: #5694f1;
+  color: #5694f1;
 }
 
-.paraLinks:hover{
+.paraLinks:hover, .paraLinks:active{
   text-decoration: none;
   color: #5694f1;
 }
