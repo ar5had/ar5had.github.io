@@ -17,6 +17,15 @@ h4{
   margin-bottom: 20px;
 }
 
+.highlight>p{
+  color:#EB298C;
+}
+
+.highlight>p:hover, .highlight>p:active, .highlight:hover, .highlight:active{
+  text-decoration: none;
+  color:#EB298C;
+}
+
 p{
   color: #666;
   line-height: 1.7;
@@ -62,12 +71,12 @@ header{
 }
 
 .paraLinks{
-  color: #5694f1;
+  color: #5694f1 !important;
 }
 
 .paraLinks:hover, .paraLinks:active{
-  text-decoration: none;
-  color: #5694f1;
+  text-decoration: none !important;
+  color: #5694f1 !important;
 }
 /* header styling ends */
 input, textarea{
@@ -144,6 +153,11 @@ textarea, input{
 .contact .col-xs-9>p{
   padding-bottom: 20px;
 }
+
+a, a>p, a:active, a:hover, a>p:active, a>p:hover {
+  text-decoration: none !important;
+}
+
 /* contact form section styling ends */
 
 footer{
