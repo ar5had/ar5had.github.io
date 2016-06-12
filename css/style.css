@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
 
 *{
   color: #222;
@@ -50,7 +50,7 @@ section{
 
 #logoName{
   text-shadow: 1px 1px 1px #111;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 3.3em;
   letter-spacing: -2px;
   text-transform: uppercase;
