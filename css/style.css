@@ -266,7 +266,22 @@ footer p:last-child{
   margin-top: 20px;
   color: #aaa;
 }
+
 /* footer styling ends */
+
+.ptech>span {
+  color: #5694f1 !important;
+}
+
+.pname {
+  margin-top: 20px;
+}
+
+.pimg{
+  width: 100%;
+}
+
+/* project page styling ends*/
 
 @media screen and (max-width: 640px) {
     #logoName{
