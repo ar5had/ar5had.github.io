@@ -17,13 +17,13 @@ h4{
   margin-bottom: 20px;
 }
 
-.highlight>p{
-  color:#EB298C;
+.highlight{
+  color:#EB298C !important;
 }
 
-.highlight>p:hover, .highlight>p:active, .highlight:hover, .highlight:active{
-  text-decoration: none;
-  color:#EB298C;
+.highlight:hover, .highlight:active{
+  text-decoration: none !important;
+  color:#EB298C !important;
 }
 
 p{
