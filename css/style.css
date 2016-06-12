@@ -269,8 +269,13 @@ footer p:last-child{
 
 /* footer styling ends */
 
-.ptech>span {
+.pcode {
   color: #5694f1 !important;
+}
+
+.ptech>span {
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, sans-serif;
+  color: #666;
 }
 
 .pname {
