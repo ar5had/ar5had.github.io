@@ -262,7 +262,7 @@ footer{
   font-size: 15px;
 }
 
-footer p:last-child{
+footer p:last-child, .credits > p {
   margin-top: 20px;
   color: #aaa;
 }
