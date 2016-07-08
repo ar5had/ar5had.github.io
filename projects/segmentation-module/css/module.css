@@ -211,7 +211,7 @@ section.segment_sect {
 
   .add_section {
     height: 90px;
-    box-shadow: 0 4px 25px rgba(0,0,0,.22), 0 0 0 1px rgba(0,0,0,.04);
+    box-shadow: 0 4px 29px rgba(0,0,0,.22), 0 0 0 1px rgba(0,0,0,.04);
     margin: 25px auto;
   }
 
@@ -256,7 +256,7 @@ section.segment_sect {
   }
 }
 
-@media screen and (max-width: 330px) {
+@media screen and (max-width: 290px) {
 
   .sect_wrapper > h1 {
     font-size: 17px;
@@ -280,7 +280,7 @@ section.segment_sect {
 
 .seg_selected {
   margin: 20px auto;
-  box-shadow: 0 4px 33px rgba(0,0,0,.22), 0 0 0 1px rgba(0,0,0,.04);
+  box-shadow: 0 4px 29px rgba(0,0,0,.22), 0 0 0 1px rgba(0,0,0,.04);
 }
 
 .control_btn_select, .control_btn_edit {
@@ -384,7 +384,7 @@ section.segment_sect {
 
 #showMsg {
   background: #f2f2f2;
-  box-shadow: 0 4px 33px rgba(0,0,0,.22), 0 0 0 1px rgba(0,0,0,.04);
+  box-shadow: 0 4px 29px rgba(0,0,0,.22), 0 0 0 1px rgba(0,0,0,.04);
   border: solid 1px #ddd;
 }
 
@@ -478,7 +478,7 @@ p {
   position: relative;
   padding: 0;
   background-color: #f2f2f2;
-  box-shadow: 0 4px 33px rgba(0,0,0,.22), 0 0 0 1px rgba(0,0,0,.04);
+  box-shadow: 0 4px 29px rgba(0,0,0,.22), 0 0 0 1px rgba(0,0,0,.04);
 }
 
 .wrapper > div > div {
