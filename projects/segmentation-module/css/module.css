@@ -357,10 +357,6 @@ section.segment_sect {
   color: #999;
 }
 
-#fp_value {
-
-}
-
 #fp, #loc, #dt, #do, #db, #vt, #vd {
   font-size: 13px;
 }
@@ -372,28 +368,6 @@ section.segment_sect {
   padding: 0;
   word-wrap: break-word;
   overflow: hidden;
-}
-
-#location {
-
-}
-
-#loc {
-
-}
-
-#loc_value {
-}
-
-#device_typ {
-
-}
-
-#dt {
-
-}
-
-#dt_val {
 }
 
 /************************************error message styling ***********************************/
@@ -408,7 +382,7 @@ section.segment_sect {
 }
 
 #showMsg {
-  background: #f9f9f9;
+  background: #f2f2f2;
   box-shadow: 0 4px 33px rgba(0,0,0,.22), 0 0 0 1px rgba(0,0,0,.04);
   border: solid 1px #ddd;
 }
