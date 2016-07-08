@@ -279,8 +279,8 @@ section.segment_sect {
 }
 
 .seg_selected {
-  transform: translateX(1%);
-  box-shadow: 0 4px 15px rgba(0,0,0,.22), 0 0 0 1px rgba(0,0,0,.04);
+  margin-bottom: 30px;
+  box-shadow: 0 4px 33px rgba(0,0,0,.22), 0 0 0 1px rgba(0,0,0,.04);
 }
 
 .control_btn_select, .control_btn_edit {
@@ -310,6 +310,7 @@ section.segment_sect {
   padding: 0;
   left: 10px;
   background: none;
+  border-radius: none;
   border: none;
 }
 
@@ -321,9 +322,9 @@ section.segment_sect {
   margin: 0;
   font-family: "Glyphicons Halflings";
   content: "\e013";
-  color: #f3f3f3;
+  color: #ddd;
   font-weight: 100;
-  font-size: 11px;
+  font-size: 13px;
 }
 
 .selected_seg::before {
