@@ -279,7 +279,7 @@ section.segment_sect {
 }
 
 .seg_selected {
-  margin-bottom: 30px;
+  margin: 20px auto;
   box-shadow: 0 4px 33px rgba(0,0,0,.22), 0 0 0 1px rgba(0,0,0,.04);
 }
 
