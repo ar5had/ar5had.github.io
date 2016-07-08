@@ -5,6 +5,7 @@ $(document).ready(function () {
   $("#popup").hide();
 
   $(".showpopup").click(function () {
+    document.querySelector(".main_content").scrollTop = 0;
     $('#hider').removeClass("hidden");
     $('#popup').removeClass("hidden");
     $("body").addClass("modal-open");
