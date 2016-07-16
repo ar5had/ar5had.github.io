@@ -90,9 +90,13 @@ button.add_segment:hover, .add:hover {
 section {
   background: #fff;
   border-top: none;
-  padding: 30px;
+  padding: 15px 20px 10px 20px;
   margin: 10px auto;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+section:first-child {
+  padding: 30px;
 }
 
 .sections > section:last-child{
@@ -165,7 +169,8 @@ section.segment_sect {
 .es_wrapper > p {
   color: #999 ;
   word-spacing: 1px;
-  font-size: 15px;
+  font-size: 16px;
+  letter-spacing: .4px;
 }
 
 .seg_img {
@@ -179,7 +184,7 @@ section.segment_sect {
   font-size: 21px;
   font-family: 'Montserrat';
   margin-top: 15px;
-  letter-spacing: 1px;
+  word-spacing: 2px;
 }
 
 .rem > span {
@@ -253,6 +258,10 @@ section.segment_sect {
 
   .main_wrapper {
     padding: 10px !important;
+  }
+
+  .selectionConditions {
+    transform: scale(.9);
   }
 }
 
@@ -383,6 +392,29 @@ section.segment_sect {
   overflow: hidden;
 }
 
+.seg_wrapper > h2 {
+  padding: 0;
+  margin: 10px 0;
+}
+
+.seg_wrapper > p {
+  font-size: 16px;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  padding: 0 10px 0 0;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+
+p.conditionsHolder > span {
+  font-weight: 700;
+  color: #999;
+}
+
+.emptyCondDisplay {
+  color: #999;
+}
+
 /************************************error message styling ***********************************/
 #msg_wrapper {
   z-index:150;
@@ -395,7 +427,7 @@ section.segment_sect {
 }
 
 #showMsg {
-  background: #f2f2f2;
+  background: #f3f3f3;
   box-shadow: 0 4px 29px rgba(0,0,0,.22), 0 0 0 1px rgba(0,0,0,.04);
 }
 
@@ -494,11 +526,11 @@ p {
 
 .wrapper > div > div {
   overflow: auto;
-  margin-bottom: 30px;
 }
 
 .wrapper > div {
   overflow: auto;
+  overflow-x: hidden;
 }
 
 .top_content {
@@ -510,7 +542,6 @@ p {
   margin: 0;
   line-height: 3.5;
   display: inline;
-  float: left;
 }
 
 .top_content > p {
@@ -522,10 +553,10 @@ p {
 }
 
 .main_content {
-  max-height: 70vh;
+  height: 70vh;
   margin: 0;
   overflow-y: scroll;
-  padding: 0px 10px;
+  position: relative;
 }
 
 h2 {
@@ -639,7 +670,7 @@ button.selected_opt:hover {
   background: #222;
 }
 
-.dropdown::before {
+.dropdown::before{
   position: absolute;
   top: 17px;
   right: 12px;
@@ -713,7 +744,7 @@ label {
 }
 
 .visitor_info {
-  margin-bottom: 10px !important;
+  margin-bottom: 20px !important;
 }
 
 .fbuttons {
@@ -759,4 +790,239 @@ button.col-xs-6:first-child {
 
 h3.visitor {
   margin-bottom: 15px;
+}
+
+.selectionTypes {
+  padding-left: 0;
+}
+
+.selectionTypes::before {
+  right: 27px;
+}
+
+.selections {
+  padding: 0;
+}
+
+.selectionConditions {
+  text-align: right;
+  margin-top: 2px;
+}
+
+.selectionHeading, .selectionConditions {
+  padding: 0;
+}
+
+.andCondition, .orCondition, .removeCondition {
+  font-size: 12px;
+  font-weight: 500;
+  border: none;
+  width: 40px;
+  line-height: 40px;
+  height: 40px;
+  display: inline-block;
+  -webkit-transition: background .1s ease-in-out;
+  -moz-transition: background .1s ease-in-out;
+  -o-transition: background .1s ease-in-out;
+  transition: background .1s ease-in-out;
+}
+
+.andCondition:focus, .orCondition:focus {
+  padding: 1px 6px;
+}
+
+.orCondition, .andCondition, .removeCondition {
+  background: #e4e4e4;
+  color: #3e3e3e;
+  border-radius: 0 20px 20px 0;
+  outline: none;
+  border: none;
+  font-size: 11px;
+  vertical-align: middle;
+}
+
+.andCondition {
+  border-radius: 0;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+.removeCondition {
+  border-radius: 20px 0px 0px 20px;
+}
+
+.removeCondition > span {
+  transform: scaleX(1.1);
+  font-size: 9px;
+}
+
+}
+
+.actCondition {
+  background: #d0d0d0;
+  color: #3e3e3e;
+}
+
+@media (max-width: 540px) {
+  .selectionTypes {
+    padding: 0;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .selectionTypes::before {
+    right: 12px;
+  }
+
+  .selections {
+    width: 100%;
+  }
+}
+
+.conditionDisplay {
+  padding: 0;
+}
+
+.conditionSelected{
+  position: relative;
+  color: #797979;
+  font-family: 'Source Sans Pro';
+  letter-spacing: 1px;
+}
+
+h3.conditionSelected.andselection:after {
+  content:"";
+  position: absolute;
+  bottom: 0;
+  left: 30px;
+  right: 0;
+  height: 8px;
+  border-top: 1px solid rgba(121, 121, 121, 0.57);
+}
+
+h3.orselection::after {
+  border: none;
+}
+
+.top_content_heading {
+  float: left;
+}
+
+.top_content > h2 {
+  padding: 0;
+}
+
+.tabBtns {
+  float: right;
+  margin: 0 !important;
+}
+
+.tabBtns > h2 {
+  display: inline;
+  line-height: 3.5;
+  text-transform: inherit;
+  color: #3e3e3e;
+  margin-left: 20px;
+  font-weight: 400;
+  font-size: 15px;
+  cursor: pointer;
+  -webkit-transition: all .1s ease-in-out;
+  -moz-transition: all .1s ease-in-out;
+  -o-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+}
+
+.deactiveTab {
+  color: #c3c3c3 !important;
+}
+
+.tab {
+  position: absolute;
+  padding: 0 10px;
+}
+
+.tab > div {
+  overflow: auto;
+  margin-bottom: 30px;
+}
+
+.advancedTab > div {
+  margin-bottom: 50px;
+}
+
+.basicTab {
+  left: 0;
+  width: 100%;
+}
+
+.advancedTab {
+  width: 100%;
+  height: 100%;
+}
+
+.advancedTab .firstHeading {
+  margin-bottom: 20px;
+}
+
+.scWrapper{
+  padding-left: 0;
+  position: relative;
+}
+
+.scWrapper::before{
+  position: absolute;
+  top: 17px;
+  right: 27px;
+  font-size: 9px;
+  color: #3e3e3e;
+  font-family: "Glyphicons Halflings";
+  content: "\e114";
+}
+
+.removeCondition:hover {
+  color: #fff;
+  background: #f0523d;
+}
+
+.selectionConditions > button {
+  -webkit-transition: all .1s ease-in-out;
+  -moz-transition: all .1s ease-in-out;
+  -o-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+}
+
+.actCondition, .actCondition:hover {
+  background: #d0d0d0;
+  border-color: #d0d0d0;
+  color: #3e3e3e;
+  cursor: inherit;
+}
+
+.conditionsWrapper {
+  width: 100%;
+}
+
+.condtionModule {
+  margin-bottom: 20px;
+}
+
+.conditionDisplay {
+  margin: 10px 0;
+}
+
+.firstHeading {
+  margin-top: 15px;
+}
+
+.conditionModule:first-child > .conditionDisplay {
+  display: none;
+}
+
+.orselection {
+  margin: 0;
+}
+
+.conditionsInfo {
+  color: #797979;
+  margin: 0;
 }
