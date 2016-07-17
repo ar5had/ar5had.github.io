@@ -413,7 +413,7 @@ $(document).ready(function () {
 
   function getButtonsText(btns) {
     var string = "";
-    for(var i = 0; i < btns.length; i++) {
+    for(var i = 0; i < btns.length-1; i++) {
       if(btns[i].nodeName !== "BUTTON")
         continue;
       else {
@@ -429,8 +429,13 @@ $(document).ready(function () {
     }
 
     if(btns[i]){
-      if(btns[i].nodeName === "BUTTON")
-        string += btns[i].textContent;
+      if(btns[i].nodeName === "BUTTON") {
+        if(btns[i].textContent === "All" || btns[i].textContent === "Anyday")
+          string = btns[i].textContent;
+        else {
+          string += btns[i].textContent;
+        }
+      }
     }
     return string;
   }
