@@ -295,7 +295,7 @@ $(document).ready(function () {
       showWarning("Fields of the basic info are required.");
       return false;
     }
-      else {
+    else {
       if(checkSelectionType(document.querySelector(".countriesSelectionType"))) {
         if(location === 'All') {
           showWarning("All countries can't be excluded.");
@@ -413,10 +413,11 @@ $(document).ready(function () {
 
   function getButtonsText(btns) {
     var string = "";
-    for(var i = 0; i < btns.length - 1; i++) {
+    for(var i = 0; i < btns.length; i++) {
       if(btns[i].nodeName !== "BUTTON")
         continue;
       else {
+        console.log(btns[i].textContent);
         if(btns[i].textContent === "All" || btns[i].textContent === "Anyday") {
           string = btns[i].textContent;
           return string;
@@ -697,6 +698,8 @@ $(document).ready(function () {
 
       document.querySelectorAll(".conditionModule")[document.querySelectorAll(".conditionModule").length-1].querySelector(".andCondition").className = "conditions andCondition";
     }
+
+    disableAndBtns();
   }
 
   function resetAdvancedTab() {
