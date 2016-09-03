@@ -4,6 +4,10 @@
   color: #222;
 }
 
+body {
+  background: url(../images/bg.png);
+}
+
 h3{
   color: #aaa;
   font-size: 20px;
