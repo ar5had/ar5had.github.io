@@ -50,6 +50,7 @@ p{
 .icon{
   width: 95px;
   border-radius: 50%;
+  box-shadow: 0px 0px 20px #eee !important;
 }
 
 section{
@@ -290,6 +291,7 @@ footer{
   width: 100%;
   border-radius: 3px;
   height: 300px;
+  box-shadow: 0px 0px 40px #eee !important;
 }
 
 /* project page styling ends*/
