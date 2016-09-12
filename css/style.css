@@ -63,14 +63,14 @@ section{
 
 #logoName {
   font: 400 100px/1.5 'Pacifico', Helvetica, sans-serif;
-  text-shadow: 3px 3px 0px rgba(0,0,0,0.1), 7px 7px 0px rgba(0,0,0,0.05) !important;
+  text-shadow: 2px 2px 0px rgba(0,0,0,0.1), 5px 5px 0px rgba(0,0,0,0.05) !important;
 }
 /* global and mixed styling ends */
 
 #logoName{
   font-weight: 700;
   font-size: 3.3em;
-  letter-spacing: -2px;
+  letter-spacing: 1px;
 }
 
 header{
