@@ -16,8 +16,16 @@ $(document).ready(function(){
         $("#location").html(loc);
         $("#temp").html(temp);
       });// ends getjson
-    }); // ends function(position)
-  }// ends if
+    }, function(error) {
+      if(error.code == error.PERMISSION_DENIED) {
+        alert("Weather app has not been given LOCATION permissions. Grant them and try again.");
+      }
+      else{
+        console.log("Location fetching error:", error);
+        alert("Error happened! Check console for more info.");
+      }
+    }, {timeout: 6000}); 
+  }// if ends
 
   $(".convert").clickToggle( function(){
     $("#cel").html("°F");
