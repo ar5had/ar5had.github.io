@@ -1,5 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url(http://fonts.googleapis.com/css?family=Pacifico);
+@import url(https://fonts.googleapis.com/css?family=Scheherazade);
+
 *{
   color: #222;
 }
@@ -61,16 +63,22 @@ section{
   font-family: 'Montserrat', sans-serif !important;
 }
 
-#logoName {
-  font: 400 100px/1.5 'Pacifico', Helvetica, sans-serif;
-  text-shadow: 2px 2px 0px rgba(0,0,0,0.1), 5px 5px 0px rgba(0,0,0,0.05) !important;
-}
 /* global and mixed styling ends */
 
-#logoName{
+#logoName {
   font-weight: 700;
   font-size: 3.3em;
   letter-spacing: 1px;
+}
+
+
+#logoName.scheherazade {
+  font-size: 8em;
+  font-weight: 500;
+  line-height: .9;
+  font-family: 'Scheherazade', serif;
+  text-shadow: 3px 3px 0px rgba(85, 147, 241, .2), 5px 6px 0px RGBA(235, 40, 140, .2);
+  text-shadow: 3px 3px 1px rgba(85, 147, 241, .2), 5px 6px 1px RGBA(235, 40, 140, .2);
 }
 
 header{
