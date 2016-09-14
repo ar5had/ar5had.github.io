@@ -310,6 +310,9 @@ footer{
         font-size: 2.3em;
     }
 
+    #logoName.scheherazade {
+      font-size: 6em;
+    }
 }
 
 @media screen and (max-width: 520px) {
