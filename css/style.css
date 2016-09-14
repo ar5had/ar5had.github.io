@@ -71,14 +71,13 @@ section{
   letter-spacing: 1px;
 }
 
-
 #logoName.scheherazade {
-  font-size: 8em;
+  font-size: 7em;
   font-weight: 500;
   line-height: .9;
   font-family: 'Scheherazade', serif;
   text-shadow: 3px 3px 0px rgba(85, 147, 241, .2), 5px 6px 0px RGBA(235, 40, 140, .2);
-  text-shadow: 3px 3px 1px rgba(85, 147, 241, .2), 5px 6px 1px RGBA(235, 40, 140, .2);
+  /*text-shadow: 3px 3px 1px rgba(85, 147, 241, .2), 5px 6px 1px RGBA(235, 40, 140, .2);*/
 }
 
 header{
