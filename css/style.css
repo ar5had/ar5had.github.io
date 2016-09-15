@@ -73,10 +73,9 @@ section{
 
 #logoName.scheherazade {
   font-size: 7em;
-  font-weight: 500;
+  font-weight: 600;
   line-height: .9;
   font-family: 'Scheherazade', serif;
-  text-shadow: 2px 3px 0px rgba(85, 147, 241, .2), 4px 6px 1px RGBA(235, 40, 140, .2);
 }
 
 header{
