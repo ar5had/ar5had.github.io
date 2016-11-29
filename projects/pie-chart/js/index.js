@@ -14,9 +14,9 @@ function plot() {
 
 	var parElemWidth = document.querySelector("#chart")
 																				.parentElement.offsetWidth;
-	
+
 	parElemWidth = parElemWidth > 350 ? 350 : parElemWidth;
-	
+
 	var width = parElemWidth;
 
 	var height = width;
@@ -25,8 +25,8 @@ function plot() {
 
 	var colorScale = d3.scaleOrdinal()
 											.range(colors);
-	
-	
+
+	var tooltip = d3.select(".myTooltip");
 
 	var arc = d3.arc()
 										.innerRadius(0)
@@ -46,7 +46,7 @@ function plot() {
 
 	var g = svg.selectAll(".arc")
 										// pie(customData) will Return some additional data (path data) with
-										// original data 
+										// original data
 										.data(pie(customData))
 								.enter().append("g")
 										.attr("class", "arc");
@@ -57,14 +57,16 @@ function plot() {
 										// The result of this function is then set as the d attribute for
 										// the path.
 										.attr("d", arc)
-										.attr("rel", "tooltip")
-										.attr("title", function(d) {
-												return d.data.name;
+										.style("fill", function(d){ return colorScale(d.data.value)})
+										.on("mouseover", function(d){
+														tooltip.html("<span class='tooltipContent'>" + d.data.value + "%</span>");
+														return tooltip.style("visibility", "visible").style("opacity", "1");
 										})
-										.style("fill", function(d){ return colorScale(d.data.value / 100)});
+										.on("mousemove", function(){return tooltip.style("top", (d3.event.pageY-35)+"px").style("left",(d3.event.pageX)-60 + "px");})
+										.on("mouseout", function(){return tooltip.style("visibility", "hidden").style("opacity", "0");});
 }
 
-document.addEventListener("DOMContentLoaded", function(event) { 
+document.addEventListener("DOMContentLoaded", function(event) {
   plot();
   // for ie 9
   if(window.attachEvent) {
