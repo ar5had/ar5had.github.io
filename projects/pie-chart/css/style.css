@@ -4,7 +4,7 @@
 
 body {
 	background: #fefefe;
-	overflow: hidden;
+	overflow-x: hidden;
 }
 
 .container {
