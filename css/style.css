@@ -1,12 +1,13 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
-@import url(https://fonts.googleapis.com/css?family=Scheherazade);
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Scheherazade|Roboto:300,400,500|Source+Sans+Pro:300,400');
 
 *{
   color: #222;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
 }
 
 body {
-  background: url(../images/bg.png);
+  background: #fefefe;
 }
 
 h3{
@@ -20,6 +21,8 @@ h4{
   color: #333;
   font-size: 20px;
   margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
 }
 
 .highlight{
@@ -51,7 +54,6 @@ p{
 .icon{
   width: 95px;
   border-radius: 50%;
-  box-shadow: 0 4px 29px rgba(0,0,0,.22), 0 0 0 1px rgba(0,0,0,.04);
 }
 
 section{
@@ -72,9 +74,9 @@ section{
 
 #logoName.scheherazade {
   font-size: 7em;
-  font-weight: 600;
+  font-weight: 500;
   line-height: .9;
-  font-family: 'Scheherazade', serif;
+  font-family: 'Scheherazade', sans-serif;
 }
 
 header{
@@ -111,9 +113,11 @@ textarea{
 textarea, input{
   width: 300px;
   font-size: 16px;
-  color: #aaa;
+  color: #666;
+  border-color: #bbb;
   padding-left: 10px;
   padding-right: 10px;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 ::-webkit-input-placeholder {
@@ -141,16 +145,17 @@ textarea, input{
 }
 
 #sendButton.btn.btn-default{
+  background: transparent;
   border: solid 2px #F6C37A;
   border-radius: 0;
-  text-transform: uppercase;
   display: block;
+  text-transform: uppercase;
   color: #F6C37A;
-  -o-transition: color .4s;
-  -ms-transition: color .4s;
-  -moz-transition: color .4s;
-  -webkit-transition: color .4s;
-  transition: color .4s;
+  -o-transition: linear color .1s .15s, linear background .1s .15s;
+  -ms-transition: linear color .1s .15s, linear background .1s .15s;
+  -moz-transition: linear color .1s .15s, linear background .1s .15s;
+  -webkit-transition: linear color .1s .15s, linear background .1s .15s;
+  transition: linear color .1s .15s, linear background .1s .15s;
   padding: 12px 15px 13px 15px;
   font-weight: 500;
   width: 75px;
@@ -181,16 +186,22 @@ footer{
 .social-icons{
   height: 28px;
   width: 28px;
-  margin: 0 2px;
+  margin: 0 5px;
+  background: transparent;
   display: inline-block;
+  -o-transition: linear background .1s .15s;
+  -ms-transition: linear background .1s .15s;
+  -moz-transition: linear background .1s .15s;
+  -webkit-transition: linear background .1s .15s;
+  transition: linear background .1s .15s;  
 }
 
 .fa{
-   -o-transition: color .4s;
-  -ms-transition: color .4s;
-  -moz-transition: color .4s;
-  -webkit-transition: color .4s;
-  transition: color .4s;
+  -o-transition: linear color .1s .15s;
+  -ms-transition: linear color .1s .15s;
+  -moz-transition: linear color .1s .15s;
+  -webkit-transition: linear color .1s .15s;
+  transition: linear color .1s .15s;
 }
 
 .fa{
@@ -288,6 +299,7 @@ footer{
 .ptech>span {
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, sans-serif;
   color: #666;
+  font-size: 16px
 }
 
 .pname {
@@ -298,7 +310,8 @@ footer{
   width: 100%;
   border-radius: 3px;
   height: 300px;
-  box-shadow: 0 4px 29px rgba(0,0,0,.22), 0 0 0 1px rgba(0,0,0,.04);
+  border: solid 1px #eee;
+  margin-bottom: 10px;
 }
 
 /* project page styling ends*/
