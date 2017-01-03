@@ -1,9 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Scheherazade|Roboto:300,400,500|Source+Sans+Pro:300,400');
+@import url('https://fonts.googleapis.com/css?family=Scheherazade|Roboto:300,400,500|Source+Sans+Pro:300,400');
 
 *{
   color: #222;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
+}
+
+i:focus, i:active {
+    outline: none;
 }
 
 body {
@@ -158,13 +162,16 @@ textarea, input{
   transition: linear color .1s .15s, linear background .1s .15s;
   padding: 12px 15px 13px 15px;
   font-weight: 500;
-  width: 75px;
-  height: 44px;
+  font-family: 'Roboto' !important;
+  font-size: 15px;
+  height: auto;
+  width: auto;
+  padding: 11px 14px 7px 14px;
 }
 
 #sendButton.btn.btn-default:hover{
   color: #fff;
-  background-color: #F6C37A;
+  background-color: rgba(246, 195, 122, 0.52);
 }
 
 .contact .col-xs-9>p{
@@ -220,7 +227,7 @@ footer{
 }
 
 .si-github:hover{
-  background-color: #4183c4;
+  background-color: rgba(65, 131, 196, 0.5);
 }
 
 .fa-linkedin{
@@ -232,7 +239,7 @@ footer{
 }
 
 .si-linkedin:hover{
-  background-color: #0976b4;
+  background-color: rgba(9, 118, 180, 0.5);
 }
 
 .fa-reddit-alien{
@@ -244,7 +251,7 @@ footer{
 }
 
 .si-reddit-alien:hover{
-  background-color: #dc4e41;
+  background-color: rgba(220, 78, 65, 0.5);
 }
 
 .fa-twitter{
@@ -256,7 +263,7 @@ footer{
 }
 
 .si-twitter:hover{
-  background-color: #55acee;
+  background-color: rgba(85, 172, 238, 0.5);
 }
 
 .fa-envelope{
@@ -270,7 +277,7 @@ footer{
 }
 
 .si-envelope:hover{
-  background-color: #222;
+  background-color: rgba(34, 34, 34, 0.5);
 }
 
 .social-icons:hover > .fa{
@@ -278,7 +285,7 @@ footer{
 }
 
 #social-network{
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
 .small p{
@@ -290,6 +297,10 @@ footer{
   color: #aaa;
 }
 
+.lastPara p:first-child {
+  margin-top: 30px;
+}
+
 /* footer styling ends */
 
 .pcode {
@@ -297,8 +308,8 @@ footer{
 }
 
 .ptech>span {
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, sans-serif;
-  color: #666;
+  font-family: 'Roboto', sans-serif;
+  color: #484747;
   font-size: 16px
 }
 
