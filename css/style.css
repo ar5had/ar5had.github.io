@@ -44,7 +44,7 @@ footer{border-top:solid 1px #eee;}
 .fa-twitter{color:#55acee;}
 .si-twitter{border:solid 2px #55acee;}
 .si-twitter:hover{background-color:rgba(85, 172, 238, 0.5);}
-.fa-envelope{color:#222;font-weight:600;vertical-align:middle;}
+.fa-envelope-o{color:#222;font-weight:600;vertical-align:middle;}
 .si-envelope{border:solid 2px #222;}
 .si-envelope:hover{background-color:rgba(34, 34, 34, 0.5);}
 .social-icons:hover > .fa{color:white;}
