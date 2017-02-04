@@ -1,67 +1,360 @@
-@import url('https://fonts.googleapis.com/css?family=Scheherazade|Roboto:300,400,500|Source+Sans+Pro:300,400');*{color:#222;font-family:'Source Sans Pro', sans-serif;font-weight:400;}
-i:focus, i:active{outline:none;}
-body{background:#fefefe;}
-h3{color:#aaa;font-size:20px;margin:0;line-height:28px;}
-h4{color:#333;font-size:20px;margin-bottom:20px;font-family:'Roboto', sans-serif;font-weight:300;}
-.highlight{color:#EB298C !important;}
-.highlight:hover, .highlight:active{text-decoration:none !important;color:#EB298C !important;}
-p{color:#666;line-height:1.7;font-size:16px;}
-.wrapper{padding:0 0 50px 0;max-width:540px;margin:auto;}
-.cus-container{max-width:540px;margin:auto;}
-.icon{width:95px;border-radius:50%;}
-section{padding-top:70px;}
-#sendButton{font-family:'Montserrat', sans-serif !important;}
-#logoName{font-weight:700;font-size:3.3em;letter-spacing:1px;}
-#logoName.scheherazade{font-size:7em;font-weight:500;line-height:.9;font-family:'Scheherazade', sans-serif;}
-header{padding-bottom:30px;border-bottom:solid 1px #eee;}
-.paraLinks{color:#5694f1 !important;}
-.paraLinks:hover, .paraLinks:active{text-decoration:none !important;color:#5694f1 !important;}
-input, textarea{border-radius:0;background:none;border:2px solid #aaa;font-weight:500;margin-bottom:12px;}
-input{height:36px;}
-textarea{height:100px;padding-top:3px;}
-textarea, input{width:300px;font-size:16px;color:#666;border-color:#bbb;padding-left:10px;padding-right:10px;font-family:'Source Sans Pro', sans-serif;}
-::-webkit-input-placeholder{color:#aaa;font-size:16px;opacity:1;}
-:-moz-placeholder{color:#aaa;font-size:16px;opacity:1;}
-::-moz-placeholder{color:#aaa;font-size:16px;opacity:1;}
-:-ms-input-placeholder{color:#aaa;font-size:16px;opacity:1;}
-#sendButton.btn.btn-default{background:transparent;border:solid 2px #F6C37A;border-radius:0;display:block;text-transform:uppercase;color:#F6C37A;-o-transition:linear color .1s .15s, linear background .1s .15s;-ms-transition:linear color .1s .15s, linear background .1s .15s;-moz-transition:linear color .1s .15s, linear background .1s .15s;-webkit-transition:linear color .1s .15s, linear background .1s .15s;transition:linear color .1s .15s, linear background .1s .15s;padding:12px 15px 13px 15px;font-weight:500;font-family:'Roboto' !important;font-size:15px;height:auto;width:auto;padding:11px 14px 7px 14px;}
-#sendButton.btn.btn-default:hover{color:#fff;background-color:rgba(246, 195, 122, 0.52);}
-.contact .col-xs-9>p{padding-bottom:20px;}
-a, a>p, a:active, a:hover, a>p:active, a>p:hover{text-decoration:none !important;outline:none !important;}
-footer{border-top:solid 1px #eee;}
-.social-icons{height:28px;width:28px;margin:0 5px;background:transparent;display:inline-block;-o-transition:linear background .1s .15s;-ms-transition:linear background .1s .15s;-moz-transition:linear background .1s .15s;-webkit-transition:linear background .1s .15s;transition:linear background .1s .15s;}
-.fa{-o-transition:linear color .1s .15s;-ms-transition:linear color .1s .15s;-moz-transition:linear color .1s .15s;-webkit-transition:linear color .1s .15s;transition:linear color .1s .15s;}
-.fa{font-size:11px;vertical-align:middle;padding:0 0 3px 0;}
-.fa-github{color:#4183c4;}
-.si-github{border:solid 2px #4183c4;background-color:none;}
-.si-github:hover{background-color:rgba(65, 131, 196, 0.5);}
-.fa-linkedin{color:#0976b4;}
-.si-linkedin{border:solid 2px #0976b4;}
-.si-linkedin:hover{background-color:rgba(9, 118, 180, 0.5);}
-.fa-reddit-alien{color:#dc4e41;}
-.si-reddit-alien{border:solid 2px #dc4e41;}
-.si-reddit-alien:hover{background-color:rgba(220, 78, 65, 0.5);}
-.fa-twitter{color:#55acee;}
-.si-twitter{border:solid 2px #55acee;}
-.si-twitter:hover{background-color:rgba(85, 172, 238, 0.5);}
-.fa-envelope-o{color:#222;font-weight:600;vertical-align:middle;}
-.si-envelope{border:solid 2px #222;}
-.si-envelope:hover{background-color:rgba(34, 34, 34, 0.5);}
-.social-icons:hover > .fa{color:white;}
-#social-network{margin-top:50px;}
-.small p{font-size:15px;}
-.lastPara > p{margin-top:20px;color:#aaa;}
-.lastPara p:first-child{margin-top:30px;}
-.pcode{color:#5694f1 !important;}
-.ptech>span{font-family:'Roboto', sans-serif;color:#484747;font-size:16px}
-.pname{margin-top:20px;}
-.pimg{width:100%;border-radius:3px;height:300px;border:solid 1px #eee;margin-bottom:10px;}
-@media screen and (max-width:640px){#logoName{font-size:2.3em;}
-#logoName.scheherazade{font-size:6em;}
+@import url('https://fonts.googleapis.com/css?family=Scheherazade|Source+Sans+Pro:300,400');
+
+*{
+  color: #222;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  text-rendering: geometricPrecision;
 }
-@media screen and (max-width:520px){.icon{width:70px;}
-#logoIcon{width:80px;}
-textarea, input{width:209px;}
-#sendButton{width:75px;}
-.pimg{height:250px;}
+
+i:focus, i:active {
+    outline: none;
+}
+
+body {
+  background: #fefefe;
+}
+
+h3{
+  color: #aaa;
+  font-size: 20px;
+  margin: 0;
+  line-height: 28px;
+}
+
+h4{
+  color: #333;
+  font-size: 22px;
+  margin-bottom: 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+}
+
+.highlight{
+  color:#EB298C !important;
+}
+
+.highlight:hover, .highlight:active{
+  text-decoration: none !important;
+  color:#EB298C !important;
+}
+
+p{
+  color: #666;
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+.wrapper{
+  padding: 0 0 50px 0;
+  max-width: 540px;
+  margin: auto;
+}
+
+.cus-container{
+  max-width: 540px;
+  margin: auto;
+}
+
+.icon{
+  width: 95px;
+  border-radius: 50%;
+}
+
+section{
+  padding-top: 70px;
+}
+
+#sendButton{
+  font-family: 'Source Sans Pro', sans-serif !important;
+}
+
+/* global and mixed styling ends */
+
+#logoName {
+  font-weight: 700;
+  font-size: 3.3em;
+  letter-spacing: 1px;
+}
+
+#logoName.scheherazade {
+  font-size: 7em;
+  font-weight: 500;
+  line-height: .9;
+  font-family: 'Scheherazade', sans-serif;
+}
+
+header{
+  padding-bottom: 30px;
+  border-bottom: solid 1px #eee;
+}
+
+.paraLinks{
+  color: #5694f1 !important;
+}
+
+.paraLinks:hover, .paraLinks:active{
+  text-decoration: none !important;
+  color: #5694f1 !important;
+}
+/* header styling ends */
+input, textarea{
+  border-radius: 0;
+  background: none;
+  border: 2px solid #aaa;
+  font-weight: 500;
+  margin-bottom:12px;
+}
+
+input{
+ height: 36px;
+}
+
+textarea{
+  height: 100px;
+  padding-top: 3px;
+}
+
+textarea, input{
+  width: 300px;
+  font-size: 16px;
+  color: #666;
+  border-color: #bbb;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+::-webkit-input-placeholder {
+  color: #aaa;
+  font-size: 16px;
+  opacity: 1;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  color: #aaa;
+  font-size: 16px;
+  opacity: 1;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  color: #aaa;
+  font-size: 16px;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #aaa;
+  font-size: 16px;
+  opacity: 1;
+}
+
+#sendButton.btn.btn-default{
+  background: transparent;
+  border: solid 2px #F6C37A;
+  border-radius: 0;
+  display: block;
+  text-transform: uppercase;
+  color: #F6C37A;
+  -o-transition: linear color .1s .15s, linear background .1s .15s;
+  -ms-transition: linear color .1s .15s, linear background .1s .15s;
+  -moz-transition: linear color .1s .15s, linear background .1s .15s;
+  -webkit-transition: linear color .1s .15s, linear background .1s .15s;
+  transition: linear color .1s .15s, linear background .1s .15s;
+  padding: 12px 15px 13px 15px;
+  font-weight: 600;
+  font-size: 15px;
+  height: auto;
+  width: auto;
+  padding: 11px 14px 7px 14px;
+}
+
+#sendButton.btn.btn-default:hover{
+  color: #fff;
+  background-color: rgba(246, 195, 122, 0.52);
+}
+
+.contact .col-xs-9>p{
+  padding-bottom: 20px;
+}
+
+a, a>p, a:active, a:hover, a>p:active, a>p:hover {
+  text-decoration: none !important;
+  outline: none !important;
+}
+
+
+/* contact form section styling ends */
+
+footer{
+  border-top: solid 1px #eee;
+}
+
+.social-icons{
+  height: 28px;
+  width: 28px;
+  margin: 0 5px;
+  background: transparent;
+  display: inline-block;
+  -o-transition: linear background .1s .15s;
+  -ms-transition: linear background .1s .15s;
+  -moz-transition: linear background .1s .15s;
+  -webkit-transition: linear background .1s .15s;
+  transition: linear background .1s .15s;  
+}
+
+.fa{
+  -o-transition: linear color .1s .15s;
+  -ms-transition: linear color .1s .15s;
+  -moz-transition: linear color .1s .15s;
+  -webkit-transition: linear color .1s .15s;
+  transition: linear color .1s .15s;
+}
+
+.fa{
+  font-size: 11px;
+  vertical-align: middle;
+  padding: 0 0 3px 0;
+}
+
+.fa-github{
+  color: #4183c4;
+}
+
+.si-github{
+ border: solid 2px #4183c4;
+  background-color: none;
+}
+
+.si-github:hover{
+  background-color: rgba(65, 131, 196, 0.5);
+}
+
+.fa-linkedin{
+  color: #0976b4;
+}
+
+.si-linkedin{
+  border: solid 2px #0976b4;
+}
+
+.si-linkedin:hover{
+  background-color: rgba(9, 118, 180, 0.5);
+}
+
+.fa-reddit-alien{
+  color: #dc4e41;
+}
+
+.si-reddit-alien{
+  border: solid 2px #dc4e41;
+}
+
+.si-reddit-alien:hover{
+  background-color: rgba(220, 78, 65, 0.5);
+}
+
+.fa-twitter{
+  color: #55acee;
+}
+
+.si-twitter{
+  border: solid 2px #55acee;
+}
+
+.si-twitter:hover{
+  background-color: rgba(85, 172, 238, 0.5);
+}
+
+.fa-envelope{
+  color: #222;
+  font-weight: 600;
+  vertical-align: middle;
+}
+
+.si-envelope{
+  border: solid 2px #222;
+}
+
+.si-envelope:hover{
+  background-color: rgba(34, 34, 34, 0.5);
+}
+
+.social-icons:hover > .fa{
+  color: white;
+}
+
+#social-network{
+  margin-top: 50px;
+}
+
+.small p{
+  font-size: 15px;
+}
+
+.lastPara > p {
+  margin-top: 20px;
+  color: #aaa;
+}
+
+.lastPara p:first-child {
+  margin-top: 30px;
+}
+
+/* footer styling ends */
+
+.pcode {
+  color: #5694f1 !important;
+}
+
+.ptech>span {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #484747;
+  font-size: 16px
+}
+
+.pname {
+  margin-top: 20px;
+}
+
+.pimg{
+  width: 100%;
+  border-radius: 3px;
+  height: 300px;
+  border: solid 1px #eee;
+  margin-bottom: 10px;
+}
+
+/* project page styling ends*/
+
+@media screen and (max-width: 640px) {
+    #logoName{
+        font-size: 2.3em;
+    }
+
+    #logoName.scheherazade {
+      font-size: 6em;
+    }
+}
+
+@media screen and (max-width: 520px) {
+  .icon{
+    width: 70px;
+  }
+  #logoIcon{
+    width: 80px;
+  }
+
+  textarea, input{
+    width: 209px;
+  }
+
+  #sendButton{
+    width: 75px;
+  }
+
+  .pimg{
+    height: 250px;
+  }
+
 }
