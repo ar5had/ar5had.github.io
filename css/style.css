@@ -37,6 +37,7 @@ h4{
 
 .emoji {
   transform: translateY(-3px);
+  height: 32px;
 }
 
 .highlight{
