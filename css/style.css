@@ -338,8 +338,9 @@ footer{
   .icon{
     width: 70px;
   }
-  #logoIcon{
-    width: 80px;
+
+  .nameLogo{
+    height: 65px;
   }
 
   textarea, input{
