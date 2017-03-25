@@ -31,6 +31,20 @@ back.forEach(elem => {
 })
 
 document.querySelector('.btn').addEventListener('click', () => {
+	document.querySelector('.str').value = "";
 	var str = document.querySelector('.str').value;
-	console.log(str);
+	document.querySelector('.heading').innerHTML= `$str`;
+	if(Math.random) {
+		str = "<h5>Secure! You can continue to visit this app!</h5>"		
+	}else {
+		str = `<h5>Unsecure! Check out the following alternative of this app.</h5>
+			<ul>
+			<li>Link 1</li>
+			<li>Link 2</li>
+			<li>Link 3</li>			
+			</ul>
+		`;
+	}
+	document.querySelector('#mystr').innerHTML= `$str`;	
+	loadNewPage('results');
 });
