@@ -299,3 +299,18 @@ td, th {
 tr:nth-child(even) {
     background-color: #dddddd;
 }
+
+.wrappertips {
+height: 50px;
+    overflow: hidden;
+  transition: .3s height
+}
+
+.tips {
+  text-align: left;
+}
+
+.wrappertips.open {
+  height: 219px;
+}
+

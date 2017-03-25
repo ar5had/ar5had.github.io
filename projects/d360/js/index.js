@@ -46,3 +46,9 @@ document.querySelector('.btn').addEventListener('click', () => {
 	document.querySelector('#mystr').innerHTML= `${str}`;	
 	loadNewPage('results');
 });
+
+const wrap = document.querySelector('.wrappertips');
+
+wrap.addEventListener('click', () => {
+	wrap.classList.toggle('open');
+});
