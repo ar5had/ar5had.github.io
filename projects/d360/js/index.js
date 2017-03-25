@@ -30,3 +30,7 @@ back.forEach(elem => {
 	});
 })
 
+document.querySelector('.btn').addEventListener('click', () => {
+	var str = document.querySelector('.str').value;
+	console.log(str);
+});
