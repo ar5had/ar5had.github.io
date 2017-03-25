@@ -31,20 +31,18 @@ back.forEach(elem => {
 })
 
 document.querySelector('.btn').addEventListener('click', () => {
+	var url = './green.png';
 	document.querySelector('.str').value = "";
 	var str = document.querySelector('.str').value;
-	document.querySelector('.heading').innerHTML= `$str`;
-	if(Math.random) {
-		str = "<h5>Secure! You can continue to visit this app!</h5>"		
+	document.querySelector('.heading').innerHTML= `${str}`;
+	if(Math.random() > .5) {
+		str = "<h5 class='green marr' >Secure! You can continue to visit this app/website! The safety index of this app is above the minimum safety index.</h5>"		
 	}else {
-		str = `<h5>Unsecure! Check out the following alternative of this app.</h5>
-			<ul>
-			<li>Link 1</li>
-			<li>Link 2</li>
-			<li>Link 3</li>			
-			</ul>
+		url = './error.png'
+		str = `<h5 class='red marr'>Unsecure app/website! High risks of leaking your private details and harmful content.
 		`;
 	}
-	document.querySelector('#mystr').innerHTML= `$str`;	
+	document.querySelector('.results .blockimg').setAttribute('src', url);
+	document.querySelector('#mystr').innerHTML= `${str}`;	
 	loadNewPage('results');
 });

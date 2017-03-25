@@ -41,8 +41,23 @@ h5 {
   text-align: left;
 }
 
+.green {
+  color: #5fef55;
+}
+
+.red {
+  color: #f0000b;
+}
+
 .grey {
   color: #777;
+}
+
+.heading, #mystr h5 {
+  text-align: center;
+  font-size: 19px;
+  margin: 40px auto;
+  max-width: 80%;
 }
 
 @keyframes fade {
