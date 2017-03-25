@@ -1,0 +1,275 @@
+* {
+  font-size: 14px;
+  font-family: Roboto !important;
+}
+
+.banner{
+  position: fixed;
+  top: 0;
+  bottom: 0; 
+  width: 100%;
+  max-height: 100vh;
+  background: #fefefe;
+  z-index: 99999;
+  text-align: center;
+  transition: all .5s;
+  animation: fade .5s linear 4s forwards;
+
+}
+
+h5 {
+      line-height: 1.5;
+    font-size: 15px;
+    color: #333;
+    text-align: left;
+    margin: 10px auto;    
+}
+
+.mar50 {
+  margin-top: 50px;
+}
+
+.banner img {
+  width: 200px;
+  margin: 42vh auto 0 auto;
+  transition: all 1.6s;
+  animation-delay: 2s;
+  animation: fio 1.6s linear infinite;
+}
+
+.tal {
+  text-align: left;
+}
+
+.grey {
+  color: #777;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 1;
+    }
+    100% {
+      opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes fio {
+    0% {
+        opacity: 1;
+    }
+
+
+    50% {
+      opacity: .4;
+    }
+
+    100% {
+      opacity: 1;
+    }
+}
+
+
+
+body {
+  background: #fefefe;
+  overflow-x: hidden;
+  transition: all 1s;
+
+}
+
+.wrapit {
+  transition: all 0.2s;
+
+  transform: translateX(0);
+}
+
+.wrapit.moveleft {
+  display: block;
+  transform: translateX(-100%);
+}
+
+.page {
+  min-height: 101vh;
+  background: #fefefe;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.2s;
+  position: fixed;
+  transform: translateX(calc(100% + 10px));
+  width: calc(100%);
+  left: 0;
+  top: 0;
+  visibility: hidden;
+}
+
+.back {
+  cursor: pointer;
+}
+
+.page.moveleft {
+
+  visibility: visible;
+  transform: translateX(0) !important;
+}
+
+.page .header {
+  padding: 10px 10px 15px 10px;
+  display: flex;
+  justify-content: space-between;
+  background: #312d3e;
+}
+.page .header img {
+  padding: 0;
+}
+.page .main {
+  margin: 0 10px;
+}
+.page .blockpara {
+  margin-bottom: 40px;
+    padding-bottom: 20px;
+}
+.page .imageWrapper {
+  margin: 60px auto 60px auto;
+  text-align: center;
+}
+.page h4 {
+  text-align: left;
+  border-bottom: 1px solid #eee;
+  line-height: 2;
+}
+.page h4:after {
+  content: "+";
+  position: absolute;
+  right: 0;
+}
+
+.pr {
+  position: relative;
+}
+
+.sm {
+  width: 20px;
+  height: 20px;
+  padding: 0 10px;
+}
+
+.blockimg {
+  max-width: 50px;
+}
+
+.centre {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container {
+  padding: 0 10px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.container .block {
+  flex: 0 0 50%;
+  transition: all 0.2s;
+  box-sizing: border-box;
+  height: 29vh;
+  position: relative;
+}
+.container .block:hover {
+  cursor: pointer;
+}
+.container .block:nth-child(2n + 1) {
+  border-right: 1px solid #eee;
+}
+.container .block:nth-child(3), .container .block:nth-child(4) {
+  border: solid 1px #eee;
+  border-left: none;
+}
+.container .block:nth-child(4) {
+  border-right: none;
+}
+.container .block div .blockpara {
+  color: #333;
+  font-weight: 800;
+}
+.container .block div .blockImg {
+  max-width: 50px;
+}
+
+.searchWrapper {
+  margin-bottom: 20px;
+  flex: 1 0 100%;
+  background: #312d3e;
+  height: 30vh;
+  position: relative;
+}
+.searchWrapper div {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  justify-content: space-between;
+  margin: auto;
+}
+.searchWrapper div:first-child {
+  padding: 10px 0;
+  width: 100%;
+}
+.searchWrapper div h3 {
+  flex: 1 1 100%;
+  color: #fff;
+  font-size: 17px;
+  line-height: 1.6;
+  text-align: center;
+}
+.searchWrapper div input {
+  padding: 7px 10px;
+  border: none;
+  outline: none;
+}
+.searchWrapper div input:focus, .searchWrapper div input:active {
+  outline: none;
+}
+.searchWrapper div input[type="text"] {
+  border-radius: 2px;
+  flex: 1;
+}
+.searchWrapper div input[type="submit"] {
+  margin-left: 10px;
+  background: #e01a3a;
+  border-radius: 2px;
+  color: white;
+  font-size: 15px;
+}
+
+input[type="submit"] {
+  border: none;
+  margin-left: 10px;
+  background: #e01a3a;
+  border-radius: 2px;
+  color: white;
+  font-size: 15px;
+  font-weight: 700
+  line-height: 1.5;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
