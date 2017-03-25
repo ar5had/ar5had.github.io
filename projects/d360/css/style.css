@@ -23,6 +23,11 @@ h5 {
     color: #333;
     text-align: left;
     margin: 10px auto;    
+    font-weight: 700 !important;
+}
+
+.page .blockpara {
+    font-weight: 700 !important;
 }
 
 .mar50 {
@@ -251,14 +256,15 @@ body {
   outline: none;
 }
 .searchWrapper div input[type="text"] {
-  border-radius: 2px;
+  border-radius: 0px;
   flex: 1;
 }
 .searchWrapper div input[type="submit"] {
   margin-left: 10px;
   background: #e01a3a;
-  border-radius: 2px;
+  border-radius: 0px;
   color: white;
+  font-weight: 800;
   font-size: 15px;
 }
 
@@ -269,8 +275,13 @@ input[type="submit"] {
   border-radius: 2px;
   color: white;
   font-size: 15px;
-  font-weight: 700
+  font-weight: 700;
+  transition: all .3s;
   line-height: 1.5;
+}
+
+.btn:hover {
+  box-shadow: 1px 4px 11px 0px rgba(0,0,0,1);
 }
 
 table {
