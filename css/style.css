@@ -94,6 +94,11 @@ header{
   text-decoration: none !important;
   color: #5694f1 !important;
 }
+
+.videoLink {
+  color: #673AB7;
+}
+
 /* header styling ends */
 input, textarea{
   border-radius: 0;
