@@ -1,8 +1,125 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400');
+@font-face {
+  font-family: 'robotoblack_italic';
+  src: url('../fonts/roboto-blackitalic-webfont.woff2') format('woff2'), url('../fonts/roboto-blackitalic-webfont.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'roboto';
+  src: url('../fonts/roboto-bold-webfont.woff2') format('woff2'), url('../fonts/roboto-bold-webfont.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'roboto';
+  src: url('../fonts/roboto-bolditalic-webfont.woff2') format('woff2'), url('../fonts/roboto-bolditalic-webfont.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'roboto';
+  src: url('../fonts/roboto-italic-webfont.woff2') format('woff2'), url('../fonts/roboto-italic-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'roboto';
+  src: url('../fonts/roboto-regular-webfont.woff2') format('woff2'), url('../fonts/roboto-regular-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'roboto';
+  src: url('../fonts/roboto-light-webfont.woff2') format('woff2'), url('../fonts/roboto-light-webfont.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'roboto';
+  src: url('../fonts/roboto-lightitalic-webfont.woff2') format('woff2'), url('../fonts/roboto-lightitalic-webfont.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'roboto';
+  src: url('../fonts/roboto-medium-webfont.woff2') format('woff2'), url('../fonts/roboto-medium-webfont.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'roboto';
+  src: url('../fonts/roboto-mediumitalic-webfont.woff2') format('woff2'), url('../fonts/roboto-mediumitalic-webfont.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'roboto_mono';
+  src: url('../fonts/robotomono-bold-webfont.woff2') format('woff2'), url('../fonts/robotomono-bold-webfont.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'roboto_mono';
+  src: url('../fonts/robotomono-bolditalic-webfont.woff2') format('woff2'), url('../fonts/robotomono-bolditalic-webfont.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'roboto_mono';
+  src: url('../fonts/robotomono-light-webfont.woff2') format('woff2'), url('../fonts/robotomono-light-webfont.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'roboto_mono';
+  src: url('../fonts/robotomono-lightitalic-webfont.woff2') format('woff2'), url('../fonts/robotomono-lightitalic-webfont.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'roboto_monomedium';
+  src: url('../fonts/robotomono-medium-webfont.woff2') format('woff2'), url('../fonts/robotomono-medium-webfont.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'roboto_monomedium_italic';
+  src: url('../fonts/robotomono-mediumitalic-webfont.woff2') format('woff2'), url('../fonts/robotomono-mediumitalic-webfont.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'roboto_mono';
+  src: url('../fonts/robotomono-regular-webfont.woff2') format('woff2'), url('../fonts/robotomono-regular-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'roboto_mono';
+  src: url('../fonts/robotomono-italic-webfont.woff2') format('woff2'), url('../fonts/robotomono-italic-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+}
 
 *{
   color: #222;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'roboto', sans-serif;
   font-weight: 400;
   text-rendering: geometricPrecision;
 }
@@ -21,18 +138,31 @@ body {
 }
 
 h3{
-  color: #aaa;
-  font-size: 20px;
+  color: #bbb;
+  font-size: 14px;
   margin: 0;
   line-height: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  word-spacing: 2px;
 }
 
-h4{
-  color: #333;
-  font-size: 20px;
-  margin-bottom: 20px;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 400;
+h2, h4{
+  color: #111;
+  font-size: 14px;
+  margin: 10px auto 40px auto;
+  font-family: 'roboto', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  line-height: 2;
+}
+
+h2 {
+  font-size: 18px;
+  margin: 50px auto 35px auto;
 }
 
 .emoji {
@@ -42,17 +172,30 @@ h4{
 
 .highlight{
   color:#EB298C !important;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: solid 2px transparent;  
+  word-spacing: 2px;
+  transition: border-color 50ms linear;
 }
 
 .highlight:hover, .highlight:active{
   text-decoration: none !important;
   color:#EB298C !important;
+  border-color: #eb298c;
 }
 
-p{
+p, input, textarea {
   color: #666;
-  line-height: 1.7;
-  font-size: 16px;
+  line-height: 2.5;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+p {
+  margin-bottom: 25px;
 }
 
 .wrapper{
@@ -69,30 +212,39 @@ p{
 .icon{
   width: 95px;
   border-radius: 50%;
+  -webkit-box-shadow: 0px 40px 110px -40px rgba(86, 119, 119, 0.68), 0px 5px 20px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 40px 110px -40px rgba(86, 119, 119, 0.68), 0px 5px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 40px 110px -40px rgba(86, 119, 119, 0.68), 0px 5px 20px rgba(0, 0, 0, 0.1);
 }
 
 section{
-  padding-top: 70px;
+  padding-top: 120px;
 }
 
 #sendButton{
-  font-family: 'Source Sans Pro', sans-serif !important;
+  font-family: 'roboto', sans-serif !important;
 }
 
 /* global and mixed styling ends */
 
 header{
-  padding-bottom: 30px;
-  border-bottom: solid 1px #eee;
+  padding-bottom: 50px;
+  border-bottom: solid 1px transparent;
 }
 
 .paraLinks{
   color: #5694f1 !important;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+  border-bottom: solid 2px transparent;
+  transition: border-color 50ms linear;  
 }
 
 .paraLinks:hover, .paraLinks:active{
   text-decoration: none !important;
   color: #5694f1 !important;
+  border-color: #5694f1;
 }
 
 .videoLink {
@@ -100,60 +252,59 @@ header{
 }
 
 /* header styling ends */
-input, textarea{
-  border-radius: 0;
-  background: none;
-  border: 2px solid #aaa;
-  font-weight: 400;
-  margin-bottom:12px;
-}
 
 input{
- height: 36px;
+ height: auto;
 }
 
 textarea{
   height: 100px;
-  padding-top: 3px;
+  padding-top: 0;
 }
 
 textarea, input{
+  line-height: 1;
   width: 300px;
-  font-size: 16px;
-  color: #666;
-  border-color: #bbb;
-  padding-left: 10px;
-  padding-right: 10px;
-  font-family: 'Source Sans Pro', sans-serif;
+  color: #aaa;
+  padding: 8px;
+  font-family: 'roboto', sans-serif;
+  border-radius: 0;
+  background: none;
+  border: 3px solid #bbb;
+  font-weight: 400;
+  margin-bottom: 25px;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 ::-webkit-input-placeholder {
-  color: #aaa;
-  font-size: 16px;
+  color: #bbb;
+  font-size: 13px;
   opacity: 1;
 }
 
 :-moz-placeholder { /* Firefox 18- */
-  color: #aaa;
-  font-size: 16px;
+  color: #bbb;
+  font-size: 13px;
   opacity: 1;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-  color: #aaa;
-  font-size: 16px;
+  color: #bbb;
+  font-size: 13px;
   opacity: 1;
 }
 
 :-ms-input-placeholder {
-  color: #aaa;
-  font-size: 16px;
+  color: #bbb;
+  font-size: 13px;
   opacity: 1;
 }
 
 #sendButton.btn.btn-default{
   background: transparent;
-  border: solid 2px #F6C37A;
+  border: solid 3px #F6C37A;
   border-radius: 0;
   display: block;
   text-transform: uppercase;
@@ -163,12 +314,13 @@ textarea, input{
   -moz-transition: linear color .1s .15s, linear background .1s .15s;
   -webkit-transition: linear color .1s .15s, linear background .1s .15s;
   transition: linear color .1s .15s, linear background .1s .15s;
-  padding: 12px 15px 13px 15px;
-  font-weight: 600;
-  font-size: 15px;
+  font-weight: 700;
+  font-size: 13px;
   height: auto;
   width: auto;
-  padding: 11px 14px 7px 14px;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  padding: 10px 15px;
 }
 
 #sendButton.btn.btn-default:hover{
@@ -189,13 +341,14 @@ a, a>p, a:active, a:hover, a>p:active, a>p:hover {
 /* contact form section styling ends */
 
 footer{
-  border-top: solid 1px #eee;
+  border-top: solid 1px transparent;
 }
 
-.social-icons{
-  height: 28px;
-  width: 28px;
-  margin: 0 5px;
+.social-icons {
+  height: 30px;
+  width: 30px;
+  margin: 0 6px;
+  line-height: 1 !important;
   background: transparent;
   display: inline-block;
   -o-transition: linear background .1s .15s;
@@ -216,7 +369,7 @@ footer{
 .fa{
   font-size: 11px;
   vertical-align: middle;
-  padding: 0 0 3px 0;
+  line-height: 26px;
 }
 
 .fa-github{
@@ -224,7 +377,7 @@ footer{
 }
 
 .si-github{
- border: solid 2px #4183c4;
+  border: solid 3px #4183c4;
   background-color: none;
 }
 
@@ -237,7 +390,7 @@ footer{
 }
 
 .si-linkedin{
-  border: solid 2px #0976b4;
+  border: solid 3px #0976b4;
 }
 
 .si-linkedin:hover{
@@ -249,7 +402,7 @@ footer{
 }
 
 .si-reddit-alien{
-  border: solid 2px #dc4e41;
+  border: solid 3px #dc4e41;
 }
 
 .si-reddit-alien:hover{
@@ -261,21 +414,21 @@ footer{
 }
 
 .si-twitter{
-  border: solid 2px #55acee;
+  border: solid 3px #55acee;
 }
 
 .si-twitter:hover{
   background-color: rgba(85, 172, 238, 0.5);
 }
 
-.fa-envelope{
+.fa-envelope-o{
   color: #222;
-  font-weight: 600;
   vertical-align: middle;
+  font-weight: 700 !important;
 }
 
 .si-envelope{
-  border: solid 2px #222;
+  border: solid 3px #222;
 }
 
 .si-envelope:hover{
@@ -287,16 +440,19 @@ footer{
 }
 
 #social-network{
-  margin-top: 50px;
+  margin-top: 70px;
 }
 
 .small p{
-  font-size: 15px;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .lastPara > p {
   margin-top: 20px;
-  color: #aaa;
+  color: #bbb;
 }
 
 .lastPara p:first-child {
@@ -307,24 +463,53 @@ footer{
 
 .pcode {
   color: #5694f1 !important;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  border-bottom: solid 2px transparent;
+  transition: border-color 50ms linear;
+}
+
+.pcode:hover {
+  border-color: #5694f1;
 }
 
 .ptech>span {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'roboto', sans-serif;
   color: #484747;
-  font-size: 16px
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+
 }
 
 .pname {
-  margin-top: 20px;
+  margin: 30px auto 40px auto;
 }
 
 .pimg{
   width: 100%;
-  border-radius: 3px;
+  border-radius: 0px;
   height: 300px;
-  border: solid 1px #eee;
   margin-bottom: 10px;
+  -webkit-box-shadow: 0px 50px 90px -30px rgba(212, 206, 206, 0.68), 0px 5px 20px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 50px 90px -30px rgba(212, 206, 206, 0.68), 0px 5px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 50px 90px -30px rgba(212, 206, 206, 0.68), 0px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.cpara, .lapara {
+  display: inline-block;
+  width: 50%;
+  margin-top: 20px;
+}
+
+.cpara {
+  float: right;
+  text-align: right;
 }
 
 /* project page styling ends*/
