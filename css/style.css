@@ -1,126 +1,42 @@
 @font-face {
-  font-family: 'robotoblack_italic';
-  src: url('../fonts/roboto-blackitalic-webfont.woff2') format('woff2'), url('../fonts/roboto-blackitalic-webfont.woff') format('woff');
-  font-weight: 900;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'roboto';
-  src: url('../fonts/roboto-bold-webfont.woff2') format('woff2'), url('../fonts/roboto-bold-webfont.woff') format('woff');
+  font-family: 'Dubai-Bold';
+  src:  url('./fonts/Dubai-Bold.eot') format('embedded-opentype'),  
+        url('./fonts/Dubai-Bold.woff') format('woff'), 
+        url('./fonts/Dubai-Bold.ttf')  format('truetype'), 
+        url('./fonts/Dubai-Bold.svg') format('svg');
   font-weight: 700;
-  font-style: normal;
 }
 
 @font-face {
-  font-family: 'roboto';
-  src: url('../fonts/roboto-bolditalic-webfont.woff2') format('woff2'), url('../fonts/roboto-bolditalic-webfont.woff') format('woff');
-  font-weight: 700;
-  font-style: italic;
+  font-family: 'Dubai-Medium';
+  src:  url('./fonts/Dubai-Medium.eot') format('embedded-opentype'),  
+        url('./fonts/Dubai-Medium.woff') format('woff'), 
+        url('./fonts/Dubai-Medium.ttf')  format('truetype'), 
+        url('./fonts/Dubai-Medium.svg') format('svg');
+  font-weight: 600;
 }
 
 @font-face {
-  font-family: 'roboto';
-  src: url('../fonts/roboto-italic-webfont.woff2') format('woff2'), url('../fonts/roboto-italic-webfont.woff') format('woff');
+  font-family: 'Dubai-Regular';
+  src:  url('./fonts/Dubai-Regular.eot') format('embedded-opentype'),  
+        url('./fonts/Dubai-Regular.woff') format('woff'), 
+        url('./fonts/Dubai-Regular.ttf')  format('truetype'), 
+        url('./fonts/Dubai-Regular.svg') format('svg');
   font-weight: 400;
-  font-style: italic;
 }
 
 @font-face {
-  font-family: 'roboto';
-  src: url('../fonts/roboto-regular-webfont.woff2') format('woff2'), url('../fonts/roboto-regular-webfont.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'roboto';
-  src: url('../fonts/roboto-light-webfont.woff2') format('woff2'), url('../fonts/roboto-light-webfont.woff') format('woff');
+  font-family: 'Dubai-Light';
+  src:  url('./fonts/Dubai-Light.eot') format('embedded-opentype'),  
+        url('./fonts/Dubai-Light.woff') format('woff'), 
+        url('./fonts/Dubai-Light.ttf')  format('truetype'), 
+        url('./fonts/Dubai-Light.svg') format('svg');
   font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'roboto';
-  src: url('../fonts/roboto-lightitalic-webfont.woff2') format('woff2'), url('../fonts/roboto-lightitalic-webfont.woff') format('woff');
-  font-weight: 300;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'roboto';
-  src: url('../fonts/roboto-medium-webfont.woff2') format('woff2'), url('../fonts/roboto-medium-webfont.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'roboto';
-  src: url('../fonts/roboto-mediumitalic-webfont.woff2') format('woff2'), url('../fonts/roboto-mediumitalic-webfont.woff') format('woff');
-  font-weight: 500;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'roboto_mono';
-  src: url('../fonts/robotomono-bold-webfont.woff2') format('woff2'), url('../fonts/robotomono-bold-webfont.woff') format('woff');
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'roboto_mono';
-  src: url('../fonts/robotomono-bolditalic-webfont.woff2') format('woff2'), url('../fonts/robotomono-bolditalic-webfont.woff') format('woff');
-  font-weight: 700;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'roboto_mono';
-  src: url('../fonts/robotomono-light-webfont.woff2') format('woff2'), url('../fonts/robotomono-light-webfont.woff') format('woff');
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'roboto_mono';
-  src: url('../fonts/robotomono-lightitalic-webfont.woff2') format('woff2'), url('../fonts/robotomono-lightitalic-webfont.woff') format('woff');
-  font-weight: 500;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'roboto_monomedium';
-  src: url('../fonts/robotomono-medium-webfont.woff2') format('woff2'), url('../fonts/robotomono-medium-webfont.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'roboto_monomedium_italic';
-  src: url('../fonts/robotomono-mediumitalic-webfont.woff2') format('woff2'), url('../fonts/robotomono-mediumitalic-webfont.woff') format('woff');
-  font-weight: 500;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'roboto_mono';
-  src: url('../fonts/robotomono-regular-webfont.woff2') format('woff2'), url('../fonts/robotomono-regular-webfont.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'roboto_mono';
-  src: url('../fonts/robotomono-italic-webfont.woff2') format('woff2'), url('../fonts/robotomono-italic-webfont.woff') format('woff');
-  font-weight: 400;
-  font-style: italic;
 }
 
 *{
   color: #222;
-  font-family: 'roboto', sans-serif;
-  font-weight: 400;
+  font-family: 'Dubai-Regular', Helvetica, roboto, sans-serif;
   text-rendering: geometricPrecision;
 }
 
@@ -139,7 +55,7 @@ body {
 
 h3{
   color: #bbb;
-  font-size: 14px;
+  font-size: 15px;
   margin: 0;
   line-height: 28px;
   font-weight: 700;
@@ -150,10 +66,9 @@ h3{
 
 h2, h4{
   color: #111;
-  font-size: 14px;
+  font-size: 16px;
   margin: 10px auto 40px auto;
-  font-family: 'roboto', sans-serif;
-  font-weight: 700;
+  font-family: 'Dubai-Bold', Helvetica, roboto, sans-serif;    
   text-transform: uppercase;
   letter-spacing: 2px;
   word-spacing: 2px;
@@ -172,7 +87,7 @@ h2 {
 
 .highlight{
   color:#EB298C !important;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -190,7 +105,7 @@ h2 {
 p, input, textarea {
   color: #666;
   line-height: 2.5;
-  font-size: 14px;
+  font-size: 16.5px;
   letter-spacing: 1px;
 }
 
@@ -222,7 +137,7 @@ section{
 }
 
 #sendButton{
-  font-family: 'roboto', sans-serif !important;
+  font-family: 'Dubai-Bold', Helvetica, roboto, sans-serif;    
 }
 
 /* global and mixed styling ends */
@@ -235,7 +150,7 @@ header{
 .paraLinks{
   color: #5694f1 !important;
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 700;
   border-bottom: solid 2px transparent;
   transition: border-color 50ms linear;  
@@ -267,38 +182,36 @@ textarea, input{
   width: 300px;
   color: #aaa;
   padding: 8px;
-  font-family: 'roboto', sans-serif;
+  font-family: 'Dubai-Bold', Helvetica, roboto, sans-serif;    
   border-radius: 0;
   background: none;
   border: 3px solid #bbb;
-  font-weight: 400;
   margin-bottom: 25px;
-  font-size: 13px;
+  font-size: 14px;
   text-transform: uppercase;
-  font-weight: 700;
 }
 
 ::-webkit-input-placeholder {
   color: #bbb;
-  font-size: 13px;
+  font-size: 14px;
   opacity: 1;
 }
 
 :-moz-placeholder { /* Firefox 18- */
   color: #bbb;
-  font-size: 13px;
+  font-size: 14px;
   opacity: 1;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
   color: #bbb;
-  font-size: 13px;
+  font-size: 14px;
   opacity: 1;
 }
 
 :-ms-input-placeholder {
   color: #bbb;
-  font-size: 13px;
+  font-size: 14px;
   opacity: 1;
 }
 
@@ -314,8 +227,7 @@ textarea, input{
   -moz-transition: linear color .1s .15s, linear background .1s .15s;
   -webkit-transition: linear color .1s .15s, linear background .1s .15s;
   transition: linear color .1s .15s, linear background .1s .15s;
-  font-weight: 700;
-  font-size: 13px;
+  font-size: 14px;
   height: auto;
   width: auto;
   letter-spacing: 1px;
@@ -463,7 +375,7 @@ footer{
 
 .pcode {
   color: #5694f1 !important;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -477,10 +389,9 @@ footer{
 }
 
 .ptech>span {
-  font-family: 'roboto', sans-serif;
+  font-family: 'Dubai-Bold', Helvetica, roboto, sans-serif;    
   color: #484747;
-  font-size: 13px;
-  font-weight: 700;
+  font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 2px;
   word-spacing: 2px;
@@ -512,16 +423,50 @@ footer{
   text-align: right;
 }
 
+.nLWrapper {
+  position: relative;
+}
+
+.nLWrapper > h2 {
+  letter-spacing: 0 !important;
+  font-size: 35px;
+  z-index: 2;
+  background: #fefefe;
+  transition: opacity .15s ease;
+  line-height: 1;
+}
+
+.nLWrapper > h2:hover {
+  opacity: 0;
+}
+
+.nLWrapper:after {
+  content: 'Arshad Khan';
+  font-size: 22px;
+  position: absolute;
+  left: 50%;
+  top: calc(50% + 10px);
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  font-family: 'Dubai-Bold', Helvetica, roboto, sans-serif;    
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  line-height: 2;
+}
+
 /* project page styling ends*/
 
 @media screen and (max-width: 640px) {
-    #logoName{
-        font-size: 2.3em;
-    }
+  
+  .nLWrapper > * {
+    font-size: 23px;
+  }  
 
-    #logoName.scheherazade {
-      font-size: 6em;
-    }
+  .nLWrapper:after {
+    font-size: 18px;
+  }  
+
 }
 
 @media screen and (max-width: 520px) {
@@ -529,10 +474,7 @@ footer{
     width: 70px;
   }
 
-  .nameLogo{
-    height: 65px;
-  }
-
+ 
   textarea, input{
     width: 209px;
   }
