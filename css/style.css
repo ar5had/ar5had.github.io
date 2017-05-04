@@ -461,7 +461,7 @@ footer{
 @media screen and (max-width: 640px) {
   
   .nLWrapper > * {
-    font-size: 23px;
+    font-size: 30px !important;
   }  
 
   .nLWrapper:after {
