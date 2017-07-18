@@ -17,33 +17,32 @@ $(document).ready(function() {
     "pewdiepie"
   ];
 
-  const closedAccount = function(name) {
-          status = "Account closed";
-          channelLink = "undefined";
-          channelName = name;
-          img = placeholderImage;
-          displayResults(img, channelName, channelLink, status);
-        };
-const accountDNE = function(name) {
-          status = "Account doesn't exist";
-          channelLink = "undefined";
-          channelName = name;
-          img = placeholderImage;
-          displayResults(img, channelName, channelLink, status);
-        };
+  const closedAccount = name => {
+    status = "Account closed";
+    channelLink = "undefined";
+    channelName = name;
+    img = placeholderImage;
+    displayResults(img, channelName, channelLink, status);
+  };
+  const accountDNE = name => {
+    status = "Account doesn't exist";
+    channelLink = "undefined";
+    channelName = name;
+    img = placeholderImage;
+    displayResults(img, channelName, channelLink, status);
+  };
 
-const showUserInfo = (link, status, fallbackName) => {
-  $.getJSON(link, function(channelJson) {
-          channelName = channelJson.display_name || fallbackName;
-    console.log(channelName);
+  const showUserInfo = (link, status, fallbackName) => {
+    $.getJSON(link, function(channelJson) {
+      channelName = channelJson.display_name || fallbackName;
 
-    img = channelJson.logo;
-          if (!img) img = placeholderImage;
-          channelLink = channelJson.url;
-          displayResults(img, channelName, channelLink, status);
-        });
-};
-  
+      img = channelJson.logo;
+      if (!img) img = placeholderImage;
+      channelLink = channelJson.url;
+      displayResults(img, channelName, channelLink, status);
+    });
+  };
+
   function storeResults(name, index) {
     var status = "";
     var link = "";
@@ -56,12 +55,11 @@ const showUserInfo = (link, status, fallbackName) => {
       success: function(json) {
         if (json.stream) status = "Streaming: " + json.stream.game;
         else status = "Offline";
-        if(json._links) {
-          
-        link =
-          "https://wind-bow.glitch.me/twitch-api/channels/" +
-          json._links.channel.split("/").reverse()[0];
-        showUserInfo(link,status, name); 
+        if (json._links) {
+          link =
+            "https://wind-bow.glitch.me/twitch-api/channels/" +
+            json._links.channel.split("/").reverse()[0];
+          showUserInfo(link, status, name);
         } else {
           accountDNE(name);
         }
