@@ -278,6 +278,7 @@ input{
 textarea{
   height: 100px;
   padding-top: 0;
+  resize: none !important;
 }
 
 textarea, input{
