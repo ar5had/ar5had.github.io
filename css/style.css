@@ -141,7 +141,7 @@ body {
   text-align: center;
 }
 
-.row.flex {
+.flex .row {
   display: flex;
 }
 
