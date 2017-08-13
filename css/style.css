@@ -146,7 +146,7 @@ body {
 }
 
 .col-xs-3 {
-  margin-right: 30px;
+  margin-right: 45px;
 }
 
 h3{
@@ -546,6 +546,10 @@ footer{
 @media screen and (max-width: 520px) {
   .icon{
     width: 70px;
+  }
+
+  .col-xs-3 {
+    margin-right: 25px;
   }
 
   .nameLogo{
