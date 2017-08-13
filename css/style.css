@@ -137,6 +137,18 @@ body {
   background: #fefefe;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.row {
+  display: flex;
+}
+
+.col-xs-3 {
+  margin-right: 20px;
+}
+
 h3{
   color: #bbb;
   font-size: 14px;
