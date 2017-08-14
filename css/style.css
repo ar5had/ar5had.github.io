@@ -135,6 +135,7 @@ i:focus, i:active {
 
 body {
   background: #fefefe;
+  margin: 10px 20px;
 }
 
 .text-center {
@@ -146,7 +147,7 @@ body {
 }
 
 .col-xs-3 {
-  margin-right: 45px;
+  padding-right: 45px;
 }
 
 h3{
@@ -550,7 +551,7 @@ footer{
   }
 
   .col-xs-3 {
-    margin-right: 25px;
+    padding-right: 25px;
   }
 
   .nameLogo{
