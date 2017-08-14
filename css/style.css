@@ -346,6 +346,7 @@ textarea, input{
 #sendButton.btn.btn-default:hover{
   color: #fff;
   background-color: rgba(246, 195, 122, 0.52);
+  cursor: pointer;
 }
 
 .contact .col-xs-9>p{
