@@ -135,7 +135,7 @@ i:focus, i:active {
 
 body {
   background: #fefefe;
-  margin: 10px 20px;
+  margin: 10px 0;
 }
 
 .text-center {
@@ -143,11 +143,30 @@ body {
 }
 
 .flex .row {
-  display: flex;
+  /* display: flex; */
+  width: 100%;
+  clear: both;
+  overflow: auto;
 }
 
 .col-xs-3 {
-  padding-right: 45px;
+  width: 25%;
+  float: left;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.col-xs-9 {
+  width: 75%;
+  padding: 0 10px;
+  float: right;
+  box-sizing: border-box;
+}
+
+.col-xs-12 {
+  width: 100%;
+  overflow: auto;
+  box-sizing: border-box;
 }
 
 h3{
@@ -189,7 +208,7 @@ h2 {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
-  border-bottom: solid 2px transparent;  
+  border-bottom: solid 2px transparent;
   word-spacing: 2px;
   transition: border-color 50ms linear;
 }
@@ -238,6 +257,7 @@ p > b {
 
 section{
   padding-top: 120px;
+  overflow: auto;
 }
 
 #sendButton{
@@ -257,7 +277,7 @@ header{
   font-size: 13px;
   font-weight: 700;
   border-bottom: solid 2px transparent;
-  transition: border-color 50ms linear;  
+  transition: border-color 50ms linear;
 }
 
 .paraLinks:hover, .paraLinks:active{
@@ -376,7 +396,7 @@ footer{
   -ms-transition: linear background .1s .15s;
   -moz-transition: linear background .1s .15s;
   -webkit-transition: linear background .1s .15s;
-  transition: linear background .1s .15s;  
+  transition: linear background .1s .15s;
 }
 
 .fa{
@@ -549,10 +569,6 @@ footer{
 @media screen and (max-width: 520px) {
   .icon{
     width: 70px;
-  }
-
-  .col-xs-3 {
-    padding-right: 25px;
   }
 
   .nameLogo{
