@@ -124,6 +124,10 @@
   text-rendering: geometricPrecision;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .nameLogo {
   height: 80px;
   margin: 15px auto 10px auto;
@@ -152,21 +156,19 @@ body {
 .col-xs-3 {
   width: 25%;
   float: left;
-  padding: 0 10px;
-  box-sizing: border-box;
+  padding: 0 15px;
 }
 
 .col-xs-9 {
   width: 75%;
-  padding: 0 10px;
+  padding: 0 15px;
   float: right;
-  box-sizing: border-box;
 }
 
 .col-xs-12 {
   width: 100%;
   overflow: auto;
-  box-sizing: border-box;
+  padding: 0 15px;
 }
 
 h3{
@@ -538,9 +540,6 @@ footer{
   height: 300px;
   margin-bottom: 10px;
   border: solid 1px whitesmoke;
-/*   -webkit-box-shadow: 0px 50px 90px -30px rgba(212, 206, 206, 0.68), 0px 5px 20px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0px 50px 90px -30px rgba(212, 206, 206, 0.68), 0px 5px 20px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 50px 90px -30px rgba(212, 206, 206, 0.68), 0px 5px 20px rgba(0, 0, 0, 0.1); */
 }
 
 .cpara, .lapara {
@@ -568,11 +567,11 @@ footer{
 
 @media screen and (max-width: 520px) {
   .icon{
-    width: 70px;
+    width: 65px;
   }
 
-  .nameLogo{
-    height: 65px;
+  #logoIcon {
+    width: 73px;
   }
 
   #sendButton{
