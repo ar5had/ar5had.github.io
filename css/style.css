@@ -119,7 +119,8 @@
 
 * {
   color: #222;
-  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
+    Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: 400;
   text-rendering: geometricPrecision;
 }
@@ -133,8 +134,9 @@
   margin: 15px auto 10px auto;
 }
 
-i:focus, i:active {
-    outline: none;
+i:focus,
+i:active {
+  outline: none;
 }
 
 body {
@@ -171,7 +173,7 @@ body {
   padding: 0 15px;
 }
 
-h3{
+h3 {
   color: #bbb;
   font-size: 14px;
   margin: 0;
@@ -182,7 +184,8 @@ h3{
   word-spacing: 2px;
 }
 
-h2, h4{
+h2,
+h4 {
   color: #111;
   font-size: 14px;
   margin: 10px auto 40px auto;
@@ -204,8 +207,8 @@ h2 {
   height: 32px;
 }
 
-.highlight{
-  color:#EB298C !important;
+.highlight {
+  color: #eb298c !important;
   font-size: 13px;
   font-weight: 700;
   text-transform: uppercase;
@@ -215,13 +218,16 @@ h2 {
   transition: border-color 50ms linear;
 }
 
-.highlight:hover, .highlight:active{
+.highlight:hover,
+.highlight:active {
   text-decoration: none !important;
-  color:#EB298C !important;
+  color: #eb298c !important;
   border-color: #eb298c;
 }
 
-p, input, textarea {
+p,
+input,
+textarea {
   color: #666;
   line-height: 2.5;
   font-size: 14px;
@@ -238,26 +244,26 @@ p > b {
   letter-spacing: 2px;
 }
 
-.wrapper{
+.wrapper {
   padding: 0 0 50px 0;
   max-width: 540px;
   margin: auto;
 }
 
-.cus-container{
+.cus-container {
   max-width: 540px;
   margin: auto;
 }
 
-.icon{
+.icon {
   width: 95px;
   border-radius: 50%;
-/*   -webkit-box-shadow: 0px 40px 110px -40px rgba(86, 119, 119, 0.68), 0px 5px 20px rgba(0, 0, 0, 0.1);
+  /*   -webkit-box-shadow: 0px 40px 110px -40px rgba(86, 119, 119, 0.68), 0px 5px 20px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0px 40px 110px -40px rgba(86, 119, 119, 0.68), 0px 5px 20px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 40px 110px -40px rgba(86, 119, 119, 0.68), 0px 5px 20px rgba(0, 0, 0, 0.1); */
 }
 
-section{
+section {
   padding-top: 120px;
   overflow: auto;
 }
@@ -268,12 +274,12 @@ section{
 
 /* global and mixed styling ends */
 
-header{
+header {
   padding-bottom: 0;
   border-bottom: solid 1px transparent;
 }
 
-.paraLinks{
+.paraLinks {
   color: #5694f1 !important;
   text-transform: uppercase;
   font-size: 13px;
@@ -282,29 +288,31 @@ header{
   transition: border-color 50ms linear;
 }
 
-.paraLinks:hover, .paraLinks:active{
+.paraLinks:hover,
+.paraLinks:active {
   text-decoration: none !important;
   color: #5694f1 !important;
   border-color: #5694f1;
 }
 
 .videoLink {
-  color: #673AB7;
+  color: #673ab7;
 }
 
 /* header styling ends */
 
-input{
- height: auto;
+input {
+  height: auto;
 }
 
-textarea{
+textarea {
   height: 100px;
   padding-top: 0;
   resize: none !important;
 }
 
-textarea, input{
+textarea,
+input {
   line-height: 1.3;
   width: 85%;
   color: #aaa;
@@ -326,13 +334,15 @@ textarea, input{
   opacity: 1;
 }
 
-:-moz-placeholder { /* Firefox 18- */
+:-moz-placeholder {
+  /* Firefox 18- */
   color: #ccc;
   font-size: 13px;
   opacity: 1;
 }
 
-::-moz-placeholder {  /* Firefox 19+ */
+::-moz-placeholder {
+  /* Firefox 19+ */
   color: #ccc;
   font-size: 13px;
   opacity: 1;
@@ -344,18 +354,18 @@ textarea, input{
   opacity: 1;
 }
 
-#sendButton.btn.btn-default{
+#sendButton.btn.btn-default {
   background: transparent;
-  border: solid 3px #F6C37A;
+  border: solid 3px #f6c37a;
   border-radius: 0;
   display: block;
   text-transform: uppercase;
-  color: #F6C37A;
-  -o-transition: linear color .1s .15s, linear background .1s .15s;
-  -ms-transition: linear color .1s .15s, linear background .1s .15s;
-  -moz-transition: linear color .1s .15s, linear background .1s .15s;
-  -webkit-transition: linear color .1s .15s, linear background .1s .15s;
-  transition: linear color .1s .15s, linear background .1s .15s;
+  color: #f6c37a;
+  -o-transition: linear color 0.1s 0.15s, linear background 0.1s 0.15s;
+  -ms-transition: linear color 0.1s 0.15s, linear background 0.1s 0.15s;
+  -moz-transition: linear color 0.1s 0.15s, linear background 0.1s 0.15s;
+  -webkit-transition: linear color 0.1s 0.15s, linear background 0.1s 0.15s;
+  transition: linear color 0.1s 0.15s, linear background 0.1s 0.15s;
   font-weight: 700;
   font-size: 13px;
   height: auto;
@@ -365,25 +375,29 @@ textarea, input{
   padding: 10px 15px;
 }
 
-#sendButton.btn.btn-default:hover{
+#sendButton.btn.btn-default:hover {
   color: #fff;
   background-color: rgba(246, 195, 122, 0.52);
   cursor: pointer;
 }
 
-.contact .col-xs-9>p{
+.contact .col-xs-9 > p {
   padding-bottom: 20px;
 }
 
-a, a>p, a:active, a:hover, a>p:active, a>p:hover {
+a,
+a > p,
+a:active,
+a:hover,
+a > p:active,
+a > p:hover {
   text-decoration: none !important;
   outline: none !important;
 }
 
-
 /* contact form section styling ends */
 
-footer{
+footer {
   border-top: solid 1px transparent;
 }
 
@@ -394,99 +408,48 @@ footer{
   line-height: 1 !important;
   background: transparent;
   display: inline-block;
-  -o-transition: linear background .1s .15s;
-  -ms-transition: linear background .1s .15s;
-  -moz-transition: linear background .1s .15s;
-  -webkit-transition: linear background .1s .15s;
-  transition: linear background .1s .15s;
+  -o-transition: linear background 0.1s 0.15s;
+  -ms-transition: linear background 0.1s 0.15s;
+  -moz-transition: linear background 0.1s 0.15s;
+  -webkit-transition: linear background 0.1s 0.15s;
+  transition: linear background 0.1s 0.15s;
 }
 
-.fa{
-  -o-transition: linear color .1s .15s;
-  -ms-transition: linear color .1s .15s;
-  -moz-transition: linear color .1s .15s;
-  -webkit-transition: linear color .1s .15s;
-  transition: linear color .1s .15s;
+.fa {
+  -o-transition: linear color 0.1s 0.15s;
+  -ms-transition: linear color 0.1s 0.15s;
+  -moz-transition: linear color 0.1s 0.15s;
+  -webkit-transition: linear color 0.1s 0.15s;
+  transition: linear color 0.1s 0.15s;
 }
 
-.fa{
-  font-size: 11px;
+.fa {
+  font-size: 12px;
   vertical-align: middle;
   line-height: 26px;
+  font-weight: bold;
 }
 
-.fa-github{
+.fa.github {
   color: #4183c4;
 }
 
-.si-github{
-  border: solid 3px #4183c4;
-  background-color: none;
-}
-
-.si-github:hover{
-  background-color: rgba(65, 131, 196, 0.5);
-}
-
-.fa-linkedin{
+.fa.linkedin {
   color: #0976b4;
 }
 
-.si-linkedin{
-  border: solid 3px #0976b4;
-}
-
-.si-linkedin:hover{
-  background-color: rgba(9, 118, 180, 0.5);
-}
-
-.fa-reddit-alien{
-  color: #dc4e41;
-}
-
-.si-reddit-alien{
-  border: solid 3px #dc4e41;
-}
-
-.si-reddit-alien:hover{
-  background-color: rgba(220, 78, 65, 0.5);
-}
-
-.fa-twitter{
-  color: #55acee;
-}
-
-.si-twitter{
-  border: solid 3px #55acee;
-}
-
-.si-twitter:hover{
-  background-color: rgba(85, 172, 238, 0.5);
-}
-
-.fa-envelope-o{
+.fa.codepen {
   color: #222;
-  vertical-align: middle;
-  font-weight: 700 !important;
 }
 
-.si-envelope{
-  border: solid 3px #222;
-}
 
-.si-envelope:hover{
-  background-color: rgba(34, 34, 34, 0.5);
-}
-
-.social-icons:hover > .fa{
-  color: white;
-}
-
-#social-network{
+#social-network {
   margin-top: 70px;
+  display: flex;
+  justify-content: space-around;
 }
 
-.small p{
+.small p {
   font-size: 13px;
   font-weight: 700;
   text-transform: uppercase;
@@ -519,7 +482,7 @@ footer{
   border-color: #5694f1;
 }
 
-.ptech>span {
+.ptech > span {
   /* font-family: 'roboto', sans-serif; */
   color: #484747;
   font-size: 13px;
@@ -527,14 +490,13 @@ footer{
   text-transform: uppercase;
   letter-spacing: 2px;
   word-spacing: 2px;
-
 }
 
 .pname {
   margin: 30px auto 40px auto;
 }
 
-.pimg{
+.pimg {
   width: 100%;
   border-radius: 0px;
   height: 300px;
@@ -542,7 +504,8 @@ footer{
   border: solid 1px whitesmoke;
 }
 
-.cpara, .lapara {
+.cpara,
+.lapara {
   display: inline-block;
   width: 50%;
   margin-top: 20px;
@@ -556,17 +519,17 @@ footer{
 /* project page styling ends*/
 
 @media screen and (max-width: 640px) {
-    #logoName{
-        font-size: 2.3em;
-    }
+  #logoName {
+    font-size: 2.3em;
+  }
 
-    #logoName.scheherazade {
-      font-size: 6em;
-    }
+  #logoName.scheherazade {
+    font-size: 6em;
+  }
 }
 
 @media screen and (max-width: 520px) {
-  .icon{
+  .icon {
     width: 65px;
   }
 
@@ -574,12 +537,11 @@ footer{
     width: 73px;
   }
 
-  #sendButton{
+  #sendButton {
     width: 75px;
   }
 
-  .pimg{
+  .pimg {
     height: 250px;
   }
-
 }
