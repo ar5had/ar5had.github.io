@@ -1,5 +1,5 @@
 # arshdkhn1.github.io
-This is my personal website which showcase all of my projects.
+This is my personal website which showcase all my projects.
 
 **Arshad Khan**
 
