@@ -33,13 +33,13 @@ body {
 }
 
 .col-xs-3 {
-  width: 30%;
+  width: 20%;
   float: left;
   padding: 0 15px;
 }
 
 .col-xs-9 {
-  width: 70%;
+  width: 80%;
   padding: 0 15px;
   float: right;
 }
