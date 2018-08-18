@@ -55,10 +55,18 @@ h3 {
   font-size: 14px;
   margin: 0;
   line-height: 28px;
-  font-weight: 700;
+  font-weight: normal;
   text-transform: uppercase;
   letter-spacing: 2px;
   word-spacing: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h3 img {
+  width: 70px;
+  margin-left: 7px;
 }
 
 h2,
