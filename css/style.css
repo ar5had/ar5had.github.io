@@ -403,6 +403,7 @@ footer {
   margin-bottom: 15px;
   padding: 10px 15px;
   color: #a94442;
+  border-radius: 5px;
 }
 
 section.error-section {
