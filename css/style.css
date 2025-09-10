@@ -497,13 +497,13 @@ html {
   }
 
   .music .row .left {
-    margin: -50px -30px 0 0;
+    margin: -50px -40px 0 0;
   }
   .music .row .right {
-    margin: -50px 0 0 -30px;
+    margin: -50px 0 0 -40px;
   }
 
-  .music section {
+  .music section:not(#header) {
     padding-top: 160px;
   }
 
@@ -528,16 +528,121 @@ html {
     gap: 20px;
   }
 
-  .wrapper {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
   .navbar a {
     font-size: 9px;
+  }
+
+  h3.sub {
+    font-size: 12px;
   }
 }
 
 .iframe-wrapper {
   margin-bottom: 20px;
+}
+
+.box.booking-box {
+  max-width: 300px;
+  margin: 0 auto 25px auto;
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.1) inset;
+  position: relative;
+  padding: 0 !important;
+  background: #efefef;
+  color: #222;
+  transition: all 150ms ease-in-out;
+}
+
+.box.booking-box:hover {
+  box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.2) inset;
+  background: #eee;
+}
+
+.box.booking-box a {
+  padding: 40px 20px 20px 20px;
+  display: block;
+  position: relative;
+  top: 0px;
+  transition: top 150ms ease-in-out;
+}
+
+.box.booking-box:hover a {
+  top: 4px;
+}
+
+.booking-box p {
+  text-align: center;
+  color: rgba(51, 51, 51, 0.6);;
+  margin: 0;
+  text-transform: uppercase;
+  transition: all 150ms ease-in-out;
+
+}
+
+.booking-box .mail-icon {
+  background: white;
+  width: 66px;
+  height: 66px;
+  padding: 8px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  margin-left: -33px;
+  margin-top: -33px;
+  box-shadow: 0px 30px 20px -10px rgba(0, 0, 0, 0.2),
+    0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.booking-box:hover p {
+  color: rgba(51, 51, 51, 1);
+}
+
+.booking-box:hover .mail-icon {
+  -webkit-animation: ctabounce2 450ms ease-in-out forwards;
+  animation: ctabounce2 450ms ease-in-out forwards;
+  -moz-animation: ctabounce2 450ms ease-in-out forwards;
+}
+
+.mail-icon .icon-fill-1 {
+  fill: none;
+  transition: fill 150ms ease-in-out;
+}
+
+.mail-icon .icon-fill-2 {
+  fill: rgba(51, 51, 51, 0.4);
+}
+
+.booking-box:hover .mail-icon .icon-fill-2 {
+  fill: rgba(51, 51, 51, 1);
+}
+
+
+@-webkit-keyframes ctabounce2 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  40% {
+    transform: translate(0px, -16px);
+  }
+  80% {
+    transform: translate(0px, 2px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes ctabounce2 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  40% {
+    transform: translate(0px, -16px);
+  }
+  80% {
+    transform: translate(0px, 2px);
+  }
+  100% {
+    transform: translate(0px, -2px);
+  }
 }
