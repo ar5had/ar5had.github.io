@@ -470,6 +470,7 @@ html {
 .link:hover,
 .link:active {
   text-decoration: none !important;
+  border-bottom: solid 2px currentColor;
 }
 
 .music .row {
@@ -571,11 +572,10 @@ html {
 
 .booking-box p {
   text-align: center;
-  color: rgba(51, 51, 51, 0.6);;
+  color: rgba(51, 51, 51, 0.6);
   margin: 0;
   text-transform: uppercase;
   transition: all 150ms ease-in-out;
-
 }
 
 .booking-box .mail-icon {
@@ -593,14 +593,22 @@ html {
     0px 0px 20px rgba(0, 0, 0, 0.1);
 }
 
+.booking-box .mail-icon img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  transition: opacity 150ms ease-in-out;
+}
+
 .booking-box:hover p {
   color: rgba(51, 51, 51, 1);
 }
 
-.booking-box:hover .mail-icon {
-  -webkit-animation: ctabounce2 450ms ease-in-out forwards;
-  animation: ctabounce2 450ms ease-in-out forwards;
-  -moz-animation: ctabounce2 450ms ease-in-out forwards;
+.booking-box:hover .mail-icon img {
+  opacity: 1;
+  -webkit-animation: backspin 2s linear forwards;
+  animation: backspin 2s linear forwards;
+  -moz-animation: backspin 2s linear forwards;
 }
 
 .mail-icon .icon-fill-1 {
@@ -616,33 +624,44 @@ html {
   fill: rgba(51, 51, 51, 1);
 }
 
-
-@-webkit-keyframes ctabounce2 {
+@-webkit-keyframes backspin {
   0% {
-    transform: translate(0px, 0px);
+    transform: rotate(0deg);
   }
-  40% {
-    transform: translate(0px, -16px);
+  10% {
+    transform: rotate(-360deg); /* fast initial spin */
+  }
+  30% {
+    transform: rotate(-720deg); /* slows down gradually */
+  }
+  60% {
+    transform: rotate(-960deg); /* more deceleration */
   }
   80% {
-    transform: translate(0px, 2px);
+    transform: rotate(-1060deg);
   }
   100% {
-    transform: translate(0px, 0px);
+    transform: rotate(-1080deg); /* ends at 3 full spins */
   }
 }
 
-@keyframes ctabounce2 {
+@keyframes backspin {
   0% {
-    transform: translate(0px, 0px);
+    transform: rotate(0deg);
   }
-  40% {
-    transform: translate(0px, -16px);
+  10% {
+    transform: rotate(-360deg); /* fast initial spin */
+  }
+  30% {
+    transform: rotate(-720deg); /* slows down gradually */
+  }
+  60% {
+    transform: rotate(-960deg); /* more deceleration */
   }
   80% {
-    transform: translate(0px, 2px);
+    transform: rotate(-1060deg);
   }
   100% {
-    transform: translate(0px, -2px);
+    transform: rotate(-1080deg); /* ends at 3 full spins */
   }
 }
