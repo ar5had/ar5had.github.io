@@ -239,7 +239,7 @@ input {
   padding: 8px;
   border-radius: 0;
   background: none;
-  border: 3px solid #bbb;
+  border: 2px solid #bbb;
   font-weight: 400;
   margin-bottom: 25px;
   font-size: 13px;
@@ -275,7 +275,7 @@ input {
 
 #sendButton.btn.btn-default {
   background: transparent;
-  border: solid 3px #f6c37a;
+  border: solid 2px #f6c37a;
   border-radius: 0;
   display: block;
   text-transform: uppercase;
