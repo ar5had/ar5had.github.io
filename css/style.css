@@ -99,10 +99,12 @@ h2 {
   color: #bbb;
   font-size: 12px;
   padding: 0 4px;
+  transition: all 150ms ease-in-out;
 }
 
-.navbar a:hover {
+.navbar a:hover{
   color: #666;
+  border-color: #666; 
 }
 
 .emoji {
@@ -234,7 +236,7 @@ textarea {
 textarea,
 input {
   line-height: 1.3;
-  width: 85%;
+  width: 100%;
   color: #aaa;
   padding: 8px;
   border-radius: 0;
@@ -279,7 +281,8 @@ input {
   border-radius: 0;
   display: block;
   text-transform: uppercase;
-  color: #f6c37a;
+  background-color: rgba(246, 195, 122, 0.52);
+  color: #fff;
   -o-transition: linear color 0.1s 0.15s, linear background 0.1s 0.15s;
   -ms-transition: linear color 0.1s 0.15s, linear background 0.1s 0.15s;
   -moz-transition: linear color 0.1s 0.15s, linear background 0.1s 0.15s;
@@ -288,15 +291,16 @@ input {
   font-weight: 700;
   font-size: 13px;
   height: auto;
-  width: auto;
+  width: 100%;
   letter-spacing: 1px;
   word-spacing: 1px;
   padding: 10px 15px;
+  transition: all 150ms ease-in-out;
 }
 
 #sendButton.btn.btn-default:hover {
   color: #fff;
-  background-color: rgba(246, 195, 122, 0.52);
+  background-color: #f6c37a;
   cursor: pointer;
 }
 
@@ -522,7 +526,7 @@ html {
   }
 
   .navbar {
-    gap: 12px;
+    gap: 15px;
   }
 
   .flex .row {
@@ -530,7 +534,7 @@ html {
   }
 
   .navbar a {
-    font-size: 9px;
+    font-size: 10px;
   }
 
   h3.sub {
