@@ -1,235 +1,979 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="theme-color" content="#0b0b0b" />
+    <title>Arshad | Afro-Electronic DJ, Copenhagen</title>
     <meta
       name="description"
-      content="Arshad is an artist currently exploring his creative expression through music and DJing."
+      content="Arshad is a Copenhagen-based Afro-electronic DJ focused on Afro Tech, Afro House &amp; GQOM, with dark, hypnotic and tribal sets. Watch the latest sessions and book Arshad."
     />
     <meta name="author" content="Arshad Khan" />
-    <title>Music — Arshad Khan</title>
-    <link
-      rel="icon"
-      type="image/png"
-      href="./images/favicon-16x16.png"
-      sizes="16x16"
+    <link rel="canonical" href="https://music.ar5had.com/" />
+
+    <!-- Link previews (Instagram, WhatsApp, iMessage, email) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Arshad | Afro-Electronic DJ, Copenhagen" />
+    <meta
+      property="og:description"
+      content="Afro Tech · Afro House · GQOM. Latest sessions, mixes and bookings."
     />
-    <link
-      rel="icon"
-      type="image/png"
-      href="./images/favicon-32x32.png"
-      sizes="32x32"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="prefetch" href="/index.html" />
-    <link rel="prefetch" href="/projects.html" />
+    <meta property="og:image" content="https://music.ar5had.com/images/dj-arshad.jpeg" />
+    <meta property="og:url" content="https://music.ar5had.com/" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet" />
+
+    <link rel="icon" type="image/png" href="./images/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="./images/favicon-32x32.png" sizes="32x32" />
+
+
+    <style>
+      :root {
+        --bg: #0b0b0b;
+        --frame: #050505;
+        --card: #141414;
+        --line: #232323;
+        --text: #f1f1f1;
+        --body: #c4c4c4;
+        --muted: #8a8a8a;
+        --accent: #ff5a36;
+        --yt: #ff3b3b;
+        --sc: #ff6a2b;
+        /* same system font stack as the original site */
+        --radius: 8px;
+        --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+          Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+        /* the card shadow from the original music page */
+        /* same shape as the original page shadow, darker so it shows on the dark background */
+        --shadow: 0 70px 40px -50px rgba(0, 0, 0, 0.95), 0 3px 24px rgba(0, 0, 0, 0.8);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        border: 20px solid var(--frame);
+        min-height: 100%;
+        background: var(--bg);
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: transparent; /* page colour comes from <html>, so the halo shows */
+        color: var(--text);
+        font-family: var(--font);
+        font-weight: 400;
+        line-height: 1.75;
+        text-rendering: geometricPrecision;
+        -webkit-font-smoothing: antialiased;
+        opacity: 0;
+        transition: opacity 0.6s ease;
+      }
+
+      /* soft round halo pinned to the bottom of the screen, so it's
+         visible while you scroll, not only at the end of the page */
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        z-index: -1;
+        pointer-events: none;
+        background: radial-gradient(
+          ellipse 75% 60% at 50% 100%,
+          rgba(255, 255, 255, 0.09) 0%,
+          rgba(255, 255, 255, 0.035) 45%,
+          transparent 100%
+        );
+      }
+
+      body.fade-in {
+        opacity: 1;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      .wrapper {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 0 24px 100px;
+      }
+
+      .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
+      }
+
+      /* ---------- Hero ---------- */
+
+      .hero {
+        text-align: center;
+        padding-top: 90px;
+      }
+
+      .avatar {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+        border-radius: 50%;
+        overflow: hidden;
+        box-shadow: 0 30px 20px -10px rgba(0, 0, 0, 0.7), 0 0 20px rgba(0, 0, 0, 0.35);
+      }
+
+      .avatar img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+
+      .logo {
+        display: block;
+        width: 230px;
+        max-width: 65%;
+        margin: 48px auto 28px;
+      }
+
+      .tagline {
+        font-weight: 700;
+        font-size: 13px;
+        letter-spacing: 3px;
+        word-spacing: 2px;
+        text-transform: uppercase;
+        color: #9a9a9a;
+        margin: 0;
+      }
+
+      .genres {
+        font-size: 12px;
+        letter-spacing: 3px;
+        word-spacing: 2px;
+        text-transform: uppercase;
+        color: #6d6d6d;
+        margin: 10px 0 0;
+      }
+
+      .socials {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+        list-style: none;
+        padding: 0;
+        margin: 44px 0 0;
+      }
+
+      .socials a {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background: var(--card);
+        border: 1px solid var(--line);
+        color: #fff;
+        text-decoration: none;
+        box-shadow: 0 14px 14px -8px rgba(0, 0, 0, 0.7), 0 1px 10px rgba(0, 0, 0, 0.35);
+        transition: color 0.2s ease, background-color 0.2s ease,
+          transform 0.2s ease;
+        will-change: transform;
+      }
+
+      /* the hover is read from the list item, which never changes size,
+         so scaling the circle or crossing the icon can't make it flicker */
+      .socials li {
+        display: block;
+      }
+
+      .socials svg {
+        width: 20px;
+        height: 20px;
+        fill: currentColor;
+        pointer-events: none;
+      }
+
+      .socials svg.ra-icon {
+        width: 24px;
+        height: 12px;
+      }
+
+      .socials li:hover a,
+      .socials a:focus-visible {
+        background: var(--text);
+        color: #0b0b0b;
+        transform: scale(1.08);
+      }
+
+      .cta {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+        flex-wrap: wrap;
+        margin-top: 40px;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 16px 30px;
+        font-weight: 700;
+        font-size: 12px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+      }
+
+      .btn-primary {
+        background: #fff;
+        border: 1px solid #fff;
+        color: #0b0b0b;
+      }
+
+      .btn-primary:hover {
+        background: var(--accent);
+        border-color: var(--accent);
+        color: #fff;
+      }
+
+      .btn-ghost {
+        background: transparent;
+        border: 1px solid #fff;
+        color: #fff;
+      }
+
+      .btn-ghost:hover {
+        background: #fff;
+        color: #0b0b0b;
+      }
+
+      /* ---------- Cards (offset icon + floating box) ---------- */
+
+      section.card-section {
+        padding-top: 170px;
+      }
+
+      .row {
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+      }
+
+      .tile {
+        flex: 0 0 auto;
+        width: 120px;
+        height: 120px;
+        display: block;
+      }
+
+      .tile img {
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+
+      .box {
+        flex: 0 0 auto;
+        min-width: 0;
+        position: relative;
+        z-index: 1;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        padding: 24px 30px 32px;
+        box-shadow: var(--shadow);
+      }
+
+      .card-title {
+        color: var(--text) !important;
+        font-weight: 600;
+      }
+
+
+      .box p {
+        color: var(--body);
+        font-size: 15px;
+        letter-spacing: 0.3px;
+        margin: 0 0 18px;
+      }
+
+      .link {
+        text-decoration: none;
+        font-size: 14px;
+        letter-spacing: 0.5px;
+        padding-bottom: 2px;
+        box-shadow: inset 0 -1px 0 0 currentColor;
+        transition: box-shadow 0.2s ease;
+      }
+
+      .link:hover {
+        box-shadow: inset 0 -3px 0 0 currentColor;
+      }
+
+      .yt-link {
+        color: var(--yt);
+      }
+
+      .sc-link {
+        color: var(--sc);
+      }
+
+      /* sits above the player's shadow, with room below the player */
+      .more-link {
+        position: relative;
+        z-index: 1;
+        margin: 40px 0 0 !important;
+      }
+
+      .label {
+        font-weight: 700;
+        font-size: 11px;
+        letter-spacing: 2.5px;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin: 28px 0 12px;
+      }
+
+      .brand-logo {
+        display: block;
+      }
+
+
+      .brand-logo img,
+      .brand-logo svg {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+      /* thumbnail that breaks out of the card and carries the shadow */
+      .video-feature {
+        position: relative;
+        margin: 26px 0 6px;
+        aspect-ratio: 16 / 9;
+        background: #000;
+        border-radius: var(--radius);
+        overflow: hidden;
+        box-shadow: var(--shadow);
+      }
+
+      .video-feature button {
+        all: unset;
+        cursor: pointer;
+        position: absolute;
+        inset: 0;
+        display: block;
+      }
+
+      .video-feature img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+
+      .video-feature .play {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 72px;
+        height: 72px;
+        transform: translate(-50%, -50%);
+        transition: transform 0.2s ease;
+      }
+
+      .video-feature button:hover .play {
+        transform: translate(-50%, -50%) scale(1.08);
+        transition-delay: 100ms;
+      }
+
+      .video-feature iframe {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+
+      .video {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        background: #000;
+      }
+
+      .video iframe {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+
+      .sessions {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 14px;
+      }
+
+      .sessions a {
+        display: block;
+        text-decoration: none;
+        color: var(--body);
+        font-size: 12px;
+        letter-spacing: 0.5px;
+        line-height: 1.5;
+      }
+
+      .sessions img {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+        display: block;
+        margin-bottom: 8px;
+        transition: opacity 0.2s ease;
+      }
+
+      .sessions a:hover img {
+        opacity: 0.8;
+      }
+
+      /* same frame and shadow as the YouTube player */
+      /* SoundCloud player: same rounded corners and shadow as the
+         YouTube player */
+      .sc-player {
+        margin: 26px 0 6px;
+        border-radius: var(--radius);
+        overflow: hidden;
+        background: #000;
+        box-shadow: var(--shadow);
+      }
+
+      .sc-player iframe {
+        display: block;
+        width: 100%;
+        height: 400px;
+        border: 0;
+      }
+
+      .played {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .played a {
+        display: inline-block;
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        color: var(--text);
+        border: 1px solid var(--line);
+        padding: 7px 12px;
+        transition: border-color 0.2s ease, background 0.2s ease, color 0.2s ease;
+      }
+
+      .played a:hover {
+        background: var(--accent);
+        border-color: var(--accent);
+        color: #fff;
+      }
+
+      /* ---------- Bookings card ---------- */
+
+      /* one button that is also the address, so people can read or copy it */
+      .mail-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 14px;
+        margin-top: 6px;
+        padding: 16px 24px;
+        background: #fff;
+        color: #0b0b0b;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        transition: background 0.2s ease, color 0.2s ease;
+      }
+
+      .mail-btn svg {
+        width: 20px;
+        height: 20px;
+        fill: currentColor;
+        flex: 0 0 auto;
+      }
+
+      .mail-btn:hover {
+        background: var(--accent);
+        color: #fff;
+      }
+
+
+      /* ---------- Card layout ----------
+         All cards are the same width and sit in one centred column, so
+         their edges line up. Each logo / tile / heading sticks out on
+         one side and sits underneath the card's top corner, like
+         travisneilson.com/videos. */
+      .row {
+        --side: 100px; /* room on each side of the card */
+      }
+
+      /* extra room above sections whose heading square is tall */
+      section.card-section.has-square {
+        padding-top: 240px;
+      }
+
+      .row > .box {
+        width: calc(100% - 2 * var(--side));
+        margin: 0 auto;
+        z-index: 2;
+      }
+
+      .row > .brand-logo,
+      .row > .tile,
+      .row > .section-title {
+        position: absolute;
+        z-index: 1;
+      }
+
+      /* card-left = header on the right, card-right = header on the left */
+      .row.card-left > .brand-logo,
+      .row.card-left > .tile,
+      .row.card-left > .section-title {
+        right: 0;
+      }
+
+      .row.card-right > .brand-logo,
+      .row.card-right > .tile,
+      .row.card-right > .section-title {
+        left: 0;
+      }
+
+      .row > .tile {
+        bottom: calc(100% - 50px);
+      }
+
+      .row > .brand-logo {
+        bottom: calc(100% - 16px);
+      }
+
+      .yt-logo {
+        width: 210px;
+      }
+
+      /* ---------- Square headings (About, Bookings) ----------
+         Uppercase Roboto laid over a square of diagonal lines. */
+      .section-title {
+        --sq: 180px;
+        --cover: 0.13; /* the card covers 13% of the square */
+        bottom: calc(100% - var(--sq) * var(--cover));
+        width: var(--sq);
+        height: var(--sq);
+        margin: 0;
+        /* text centred in the part of the square you can see */
+        padding-bottom: calc(var(--sq) * var(--cover));
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: repeating-linear-gradient(
+          -45deg,
+          rgba(255, 255, 255, 0.16) 0 1px,
+          transparent 1px 8px
+        );
+        font-family: "Roboto", var(--font);
+        font-weight: 900;
+        font-size: 30px;
+        letter-spacing: 3px;
+        line-height: 1;
+        text-transform: uppercase;
+        white-space: nowrap;
+        color: var(--text);
+        text-shadow: 0 2px 12px rgba(0, 0, 0, 0.9);
+      }
+
+      /* square that hangs below the card's bottom-left corner (Bookings) */
+      .row > .section-title.below {
+        bottom: auto;
+        top: calc(100% - var(--sq) * var(--cover));
+        padding-bottom: 0;
+        padding-top: calc(var(--sq) * var(--cover));
+      }
+
+      section.card-section.has-square-below {
+        padding-top: 120px;
+        padding-bottom: 200px;
+      }
+
+      /* Hover effects wait 100ms, so passing over an element quickly
+         doesn't flash it. Moving away resets immediately, and keyboard
+         focus is not delayed. */
+      .btn:hover,
+      .socials li:hover a,
+      .played a:hover,
+      .link:hover,
+      .sessions a:hover img,
+      .mail-btn:hover {
+        transition-delay: 100ms;
+      }
+
+      /* ---------- Mobile ---------- */
+
+      @media (max-width: 560px) {
+        html {
+          border-width: 10px;
+        }
+
+        .wrapper {
+          padding: 0 14px 80px;
+        }
+
+        .hero {
+          padding-top: 60px;
+        }
+
+        .avatar {
+          width: 116px;
+          height: 116px;
+        }
+
+        .logo {
+          width: 180px;
+          margin: 36px auto 22px;
+        }
+
+        .tagline {
+          font-size: 11px;
+          letter-spacing: 2.5px;
+        }
+
+        .genres {
+          font-size: 10px;
+          letter-spacing: 2.5px;
+        }
+
+        .socials {
+          gap: 12px;
+          margin-top: 36px;
+        }
+
+        .socials a {
+          width: 44px;
+          height: 44px;
+        }
+
+        .cta {
+          gap: 12px;
+          margin-top: 32px;
+        }
+
+        .btn {
+          padding: 15px 22px;
+          font-size: 11px;
+          letter-spacing: 2.5px;
+        }
+
+        section.card-section {
+          padding-top: 140px;
+        }
+
+        .tile {
+          width: 80px;
+          height: 80px;
+        }
+
+        .box {
+          padding: 18px 20px 26px;
+        }
+
+        .sessions {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .row {
+          --side: 22px;
+        }
+
+        .tile {
+          width: 80px;
+          height: 80px;
+        }
+
+        .row > .tile {
+          bottom: calc(100% - 24px);
+        }
+
+        .row > .brand-logo {
+          bottom: calc(100% - 10px);
+        }
+
+        .yt-logo {
+          width: 118px;
+        }
+
+        section.card-section.has-square {
+          padding-top: 170px;
+        }
+
+        section.card-section.has-square-below {
+          padding-top: 90px;
+          padding-bottom: 130px;
+        }
+
+        .section-title {
+          --sq: 124px;
+          font-size: 18px;
+          letter-spacing: 2px;
+        }
+
+        .mail-btn {
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          padding: 15px 14px;
+          font-size: 14px;
+          gap: 10px;
+          overflow-wrap: anywhere;
+        }
+      }
+    </style>
   </head>
 
   <body>
-    <div class="container">
-      <div class="wrapper music">
-        <div class="navbar">
-          <h3><a href="/">Home</a></h3>
-          <h3><a href="/projects">Projects</a></h3>
-          <h3><a target="_blank" href="/resume">Resume</a></h3>
-          <h3><a class="active" href="/music">Music</a></h3>
+    <div class="wrapper">
+      <!-- ================= HERO ================= -->
+      <header class="hero">
+        <div class="avatar">
+          <img src="images/dj-arshad.jpeg" alt="Arshad, afro-electronic DJ" />
         </div>
-        <section id="header">
-          <header>
-            <div class="col-xs-12 text-center">
-              <span class="icon" id="logoIcon"
-                ><a href="/"><img src="images/dj-arshad.jpeg" alt="Arshad" /></a
-              ></span>
-            </div>
-            <div class="col-xs-12 text-center nLWrapper">
-              <img
-                src="images/music.png"
-                alt="logo"
-                id="title-text-music"
-                class="title-text"
-              />
-            </div>
-          </header>
-          <h3 class="sub">DJ | Producer</h3>
-        </section>
+        <h1 class="visually-hidden">Arshad</h1>
+        <img class="logo" src="images/logo-arshad-white-1.png" alt="Arshad" />
+        <p class="tagline">Afro-electronic DJ · Copenhagen</p>
+        <p class="genres">Afro Tech · Afro House · GQOM</p>
 
-        <section class="soundcloud flex">
-          <div class="row">
-            <img
-              src="images/soundcloud.png"
-              alt="Soundcloud"
-              class="icon square left"
-            />
-            <div class="box">
-              <h4>Soundcloud</h4>
-              <p>
-                Check out my mixes and DJ sets from various venues and events,
-                along with some of my own remixes and edits.
-              </p>
-              <p>
-                <a
-                  href="https://soundcloud.com/ar5had"
-                  target="_blank"
-                  class="sc-link link"
-                  >Soundcloud.com/ar5had</a
-                >
-              </p>
-              <div class="iframe-wrapper">
-                <iframe
-                  width="100%"
-                  height="450"
-                  scrolling="no"
-                  frameborder="no"
-                  allow="autoplay"
-                  src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/2078738940&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
-                ></iframe>
-                <div
-                  style="
-                    font-size: 10px;
-                    color: #cccccc;
-                    line-break: anywhere;
-                    word-break: normal;
-                    overflow: hidden;
-                    white-space: nowrap;
-                    text-overflow: ellipsis;
-                    font-family: Interstate, Lucida Grande, Lucida Sans Unicode,
-                      Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
-                    font-weight: 100;
-                  "
-                >
-                  <a
-                    href="https://soundcloud.com/ar5had"
-                    title="Arshad"
-                    target="_blank"
-                    style="color: #cccccc; text-decoration: none"
-                    >Arshad</a
-                  >
-                  ·
-                  <a
-                    href="https://soundcloud.com/ar5had/sets/music-by-arshad"
-                    title="Music by Arshad"
-                    target="_blank"
-                    style="color: #cccccc; text-decoration: none"
-                    >Music by Arshad</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- <section class="mixcloud flex">
-          <div class="row">
-            <div class="box">
-              <h4>Mixcloud</h4>
-              <p>
-                There are some mixes that I have uploaded on mixcloud which
-                aren't available on soundcloud due to copyright restrictions.
-              </p>
-              <p>
-                <a
-                  href="https://www.mixcloud.com/ar5hadkhan/"
-                  target="_blank"
-                  class="mc-link link"
-                  >Mixcloud.com/ar5hadkhan</a
-                >
-              </p>
-              <div class="iframe-wrapper">
-                <iframe
-                  width="100%"
-                  height="120"
-                  src="https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Far5hadkhan%2F"
-                  frameborder="0"
-                  allow="encrypted-media; fullscreen; autoplay; idle-detection; speaker-selection; web-share;"
-                ></iframe>
-              </div>
-            </div>
-            <img
-              src="images/mix.png"
-              alt="Mixcloud"
-              class="icon square right"
-            />
-          </div>
-        </section> -->
-        <!-- <section class="youtube flex">
-          <div class="row">
-            <img
-              src="images/youtube.png"
-              alt="Youtube"
-              class="icon square left"
-            />
+        <ul class="socials">
+          <li>
+            <a href="https://www.instagram.com/ar5had.music/" target="_blank" rel="noopener" title="Instagram" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.03.084c-1.277.06-2.149.264-2.91.563a5.9 5.9 0 0 0-2.124 1.388 5.9 5.9 0 0 0-1.38 2.127C.321 4.926.12 5.8.064 7.076s-.069 1.688-.063 4.947.021 3.667.083 4.947c.061 1.277.264 2.149.563 2.911.308.789.72 1.457 1.388 2.123a5.9 5.9 0 0 0 2.129 1.38c.763.295 1.636.496 2.913.552 1.278.056 1.689.069 4.947.063s3.668-.021 4.947-.082c1.28-.06 2.147-.265 2.91-.563a5.9 5.9 0 0 0 2.123-1.388 5.9 5.9 0 0 0 1.38-2.129c.295-.763.496-1.636.551-2.912.056-1.28.07-1.69.063-4.948-.006-3.258-.02-3.667-.081-4.947-.06-1.28-.264-2.148-.564-2.911a5.9 5.9 0 0 0-1.387-2.123 5.86 5.86 0 0 0-2.128-1.38C19.074.322 18.202.12 16.924.066 15.647.009 15.236-.006 11.977 0S8.31.021 7.03.084m.14 21.693c-1.17-.05-1.805-.245-2.228-.408a3.7 3.7 0 0 1-1.382-.895 3.7 3.7 0 0 1-.9-1.378c-.165-.423-.363-1.058-.417-2.228-.06-1.264-.072-1.644-.08-4.848-.006-3.204.006-3.583.061-4.848.05-1.169.246-1.805.408-2.228.216-.561.477-.96.895-1.382a3.7 3.7 0 0 1 1.379-.9c.423-.165 1.057-.361 2.227-.417 1.265-.06 1.644-.072 4.848-.08 3.203-.006 3.583.006 4.85.062 1.168.05 1.804.244 2.227.408.56.216.96.475 1.382.895s.681.817.9 1.378c.165.422.362 1.056.417 2.227.06 1.265.074 1.645.08 4.848.005 3.203-.006 3.583-.061 4.848-.051 1.17-.245 1.805-.408 2.23-.216.56-.477.96-.896 1.38a3.7 3.7 0 0 1-1.378.9c-.422.165-1.058.362-2.226.418-1.266.06-1.645.072-4.85.079s-3.582-.006-4.848-.06m9.783-16.192a1.44 1.44 0 1 0 1.437-1.442 1.44 1.44 0 0 0-1.437 1.442M5.839 12.012a6.161 6.161 0 1 0 12.323-.024 6.162 6.162 0 0 0-12.323.024M8 12.008A4 4 0 1 1 12.008 16 4 4 0 0 1 8 12.008"/></svg>
+            </a>
+          </li>
+          <!-- TikTok handle may change to ar5had.music on 5 Dec 2026 -->
+          <li>
+            <a href="https://www.tiktok.com/@ar5had.tiktok" target="_blank" rel="noopener" title="TikTok" aria-label="TikTok">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07"/></svg>
+            </a>
+          </li>
+          <!-- sub_confirmation=1 asks visitors to subscribe when the channel opens -->
+          <li>
+            <a href="https://www.youtube.com/@ar5had-music?sub_confirmation=1" target="_blank" rel="noopener" title="YouTube" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.02 3.02 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.02 3.02 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.02 3.02 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.02 3.02 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814M9.545 15.568V8.432L15.818 12z"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://soundcloud.com/ar5had" target="_blank" rel="noopener" title="SoundCloud" aria-label="SoundCloud">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.999 14.165c-.052 1.796-1.612 3.169-3.4 3.169h-8.18a.68.68 0 0 1-.675-.683V7.862a.75.75 0 0 1 .452-.724s.75-.513 2.333-.513a5.36 5.36 0 0 1 2.763.755 5.43 5.43 0 0 1 2.57 3.54c.282-.08.574-.121.868-.12.884 0 1.73.358 2.347.992s.948 1.49.922 2.373M10.721 8.421c.247 2.98.427 5.697 0 8.672a.264.264 0 0 1-.53 0c-.395-2.946-.22-5.718 0-8.672a.264.264 0 0 1 .53 0M9.072 9.448c.285 2.659.37 4.986-.006 7.655a.277.277 0 0 1-.55 0c-.331-2.63-.256-5.02 0-7.655a.277.277 0 0 1 .556 0m-1.663-.257c.27 2.726.39 5.171 0 7.904a.266.266 0 0 1-.532 0c-.38-2.69-.257-5.21 0-7.904a.266.266 0 0 1 .532 0m-1.647.77a26.1 26.1 0 0 1-.008 7.147.272.272 0 0 1-.542 0 28 28 0 0 1 0-7.147.275.275 0 0 1 .55 0m-1.67 1.769c.421 1.865.228 3.5-.029 5.388a.257.257 0 0 1-.514 0c-.21-1.858-.398-3.549 0-5.389a.272.272 0 0 1 .543 0Zm-1.655-.273c.388 1.897.26 3.508-.01 5.412-.026.28-.514.283-.54 0-.244-1.878-.347-3.54-.01-5.412a.283.283 0 0 1 .56 0m-1.668.911c.4 1.268.257 2.292-.026 3.572a.257.257 0 0 1-.514 0c-.241-1.262-.354-2.312-.023-3.572a.283.283 0 0 1 .563 0"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://ra.co/dj/arshad" target="_blank" rel="noopener" title="Resident Advisor" aria-label="Resident Advisor">
+              <svg class="ra-icon" viewBox="0 0 83 40" aria-hidden="true"><path d="M82.092 32.018c.556-.533.908-1.28.908-2.113 0-.802-.38-1.523-.9-2.051L58.665 4.3l-7.073 7.11 18.45 18.543h-26.14c-1.278-.038-2.29-.469-3.147-1.304l-11.73-11.788a6.828 6.828 0 00-4.689-1.888l-.017.001H10.004v-4.92h14.825c2.938.002 5.559 1.21 7.48 3.15l8.749 8.793 7.073-7.11-8.92-8.963C35.485 2.234 30.45 0 24.805 0H0v25.027h20.978v.002a4.919 4.919 0 013.486 1.48L35.95 38.053A6.74 6.74 0 0040.449 40h31.733a4.911 4.911 0 003.423-1.45l6.491-6.524-.004-.008"/></svg>
+            </a>
+          </li>
+        </ul>
 
-            <div class="box">
-              <h4>Youtube</h4>
-              <p>
-                Occasionally I upload music related content and DJ sets on my
-                YouTube channel.
-              </p>
-              <p>
-                <a
-                  href="https://www.youtube.com/@ar5hadkhan"
-                  target="_blank"
-                  class="yt-link link"
-                  >Youtube.com/@ar5hadkhan</a
-                >
-              </p>
+        <div class="cta">
+          <a class="btn btn-primary" href="#latest">Listen now</a>
+          <a class="btn btn-ghost" href="#bookings">Bookings</a>
+        </div>
+      </header>
+
+      <!-- ================= YOUTUBE ================= -->
+      <section class="card-section yt-section" id="latest">
+        <div class="row card-left tile-right">
+          <a class="brand-logo yt-logo" href="https://www.youtube.com/@ar5had-music?sub_confirmation=1" target="_blank" rel="noopener" aria-label="YouTube channel"><img src="images/youtube-logo.svg" alt="YouTube" /></a>
+          <div class="box">
+            <p>
+              A new set every two weeks. Whatever I&rsquo;ve been feeling lately,
+              but mostly dark, hypnotic and energetic Afro Tech, Afro House &amp; GQOM.
+            </p>
+
+            <!-- Filled by the script: a thumbnail of LATEST_VIDEO that turns into
+                 the player when clicked, or your newest upload if it's empty -->
+            <div class="video-feature" id="latest-video"></div>
+
+            <div id="more-wrap" hidden>
+              <div class="label">More videos</div>
+              <div class="sessions" id="more-sessions"></div>
             </div>
+
+            <p class="more-link">
+              <a class="link yt-link" href="https://www.youtube.com/@ar5had-music/videos?sub_confirmation=1" target="_blank" rel="noopener">
+                See all videos on YouTube →
+              </a>
+            </p>
           </div>
-        </section> -->
-        <section class="flex booking">
-          <div class="box booking-box glow-on-hover">
-            <a href="mailto:arshdkhn1+booking@gmail.com">
-              <p>Contact Me</p>
+        </div>
+      </section>
+
+      <!-- ================= SOUNDCLOUD ================= -->
+      <section class="card-section">
+        <div class="row card-right tile-left">
+          <a class="tile" href="https://soundcloud.com/ar5had" target="_blank" rel="noopener" aria-label="SoundCloud profile"><img src="images/soundcloud.png" alt="SoundCloud" /></a>
+          <div class="box">
+            <p>Mixes I record to share the music I&rsquo;m into, sets from radio shows and events, plus my own edits and remixes.</p>
+            <div class="sc-player">
+              <iframe
+                title="Arshad on SoundCloud"
+                loading="lazy"
+                allow="autoplay"
+                src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/ar5had&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=false"
+              ></iframe>
+            </div>
+            <p class="more-link">
+              <a class="link sc-link" href="https://soundcloud.com/ar5had" target="_blank" rel="noopener">soundcloud.com/ar5had →</a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= ABOUT ================= -->
+      <section class="card-section has-square">
+        <div class="row card-right tile-right">
+          <h2 class="section-title">About</h2>
+          <div class="box">
+            <p>
+              Arshad is a Copenhagen-based Afro-electronic DJ focused on Afro Tech,
+              Afro House &amp; GQOM.
+            </p>
+            <p>
+              His sound leans into dark, hypnotic and tribal textures. His sets are
+              energetic and driving, often with a subtle spiritual or introspective
+              undertone.
+            </p>
+            <div class="label">Played on</div>
+            <ul class="played">
+              <li><a href="https://www.rinse.fm/channels/france" target="_blank" rel="noopener">Rinse France</a></li>
+              <li><a href="https://www.radiopanini.com/" target="_blank" rel="noopener">Radio Panini</a></li>
+              <li><a href="https://www.radioarena.org/" target="_blank" rel="noopener">Radio Arena</a></li>
+              <li><a href="https://www.pinataradio.com/" target="_blank" rel="noopener">Radio Piñata</a></li>
+              <li><a href="https://sigurdcph.com/" target="_blank" rel="noopener">Sigurds</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= BOOKINGS ================= -->
+      <section class="card-section has-square-below" id="bookings">
+        <div class="row card-right tile-left">
+          <h2 class="section-title below">Bookings</h2>
+          <div class="box booking-box">
+            <p>Clubs, radio, events and festivals. Based in Copenhagen, available worldwide.</p>
+            <a class="mail-btn" href="mailto:bookings@ar5had.com?subject=Booking%20enquiry%20for%20Arshad">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 5h20v14H2V5zm2 2v.6l8 5.2 8-5.2V7H4zm16 2.9-8 5.2-8-5.2V17h16V9.9z"/></svg>
+              <span>bookings@ar5had.com</span>
             </a>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
+
     </div>
-    <script>
-      (function (i, s, o, g, r, a, m) {
-        i["GoogleAnalyticsObject"] = r;
-        (i[r] =
-          i[r] ||
-          function () {
-            (i[r].q = i[r].q || []).push(arguments);
-          }),
-          (i[r].l = 1 * new Date());
-        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m);
-      })(
-        window,
-        document,
-        "script",
-        "https://www.google-analytics.com/analytics.js",
-        "ga"
-      );
-
-      ga("create", "UA-80491055-1", "auto");
-      ga("send", "pageview");
-    </script>
-    <script>
-      (function (h, o, t, j, a, r) {
-        h.hj =
-          h.hj ||
-          function () {
-            (h.hj.q = h.hj.q || []).push(arguments);
-          };
-        h._hjSettings = { hjid: 429472, hjsv: 5 };
-        a = o.getElementsByTagName("head")[0];
-        r = o.createElement("script");
-        r.async = 1;
-        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-        a.appendChild(r);
-      })(window, document, "//static.hotjar.com/c/hotjar-", ".js?sv=");
-    </script>
 
     <script>
-      window.addEventListener("load", () => {
+      /* =========================================================
+         EDIT HERE
+         ---------------------------------------------------------
+         LATEST_VIDEO: the video ID of your newest session (the part
+         after "watch?v=" in its YouTube link). Paste it
+         in each time you upload (every two weeks). It shows as a big
+         thumbnail that plays on the page when clicked. If you leave
+         it "", the section plays your newest upload automatically
+         instead, but without the thumbnail.
+
+         MORE_SESSIONS: older sets as thumbnails under the latest
+         video. Leave empty to hide the row.
+         ========================================================= */
+      const LATEST_VIDEO = "54EVfNbPeRk"; // Session 01
+
+      const MORE_SESSIONS = [
+        // { id: "VIDEO_ID", title: "Session 02" },
+        // { id: "VIDEO_ID", title: "Session 01" },
+      ];
+
+      /* ---- no need to edit below ---- */
+      (function () {
+        const box = document.getElementById("latest-video");
+        const allow =
+          "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+        function player(src) {
+          return (
+            '<iframe title="Latest session by Arshad" src="' + src +
+            '" allow="' + allow +
+            '" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
+          );
+        }
+        if (!LATEST_VIDEO) {
+          box.innerHTML = player(
+            "https://www.youtube-nocookie.com/embed/videoseries?list=UUtwuLOAGvRkg6GdQbDNRmbg"
+          );
+          return;
+        }
+        box.innerHTML =
+          '<button type="button" aria-label="Play the latest session">' +
+          '<img alt="" src="https://i.ytimg.com/vi/' + LATEST_VIDEO + '/maxresdefault.jpg" ' +
+          'onerror="this.onerror=null;this.src=\'https://i.ytimg.com/vi/' + LATEST_VIDEO + '/hqdefault.jpg\'">' +
+          '<svg class="play" viewBox="0 0 24 24" aria-hidden="true">' +
+          '<rect x="6" y="7" width="12" height="10" fill="#fff"/>' +
+          '<path fill="#ff0000" d="M23.498 6.186a3.02 3.02 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.02 3.02 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.02 3.02 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.02 3.02 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814M9.545 15.568V8.432L15.818 12z"/></svg>' +
+          "</button>";
+        box.querySelector("button").addEventListener("click", function () {
+          box.innerHTML = player(
+            "https://www.youtube-nocookie.com/embed/" + LATEST_VIDEO + "?autoplay=1"
+          );
+        });
+      })();
+
+      if (MORE_SESSIONS.length) {
+        const grid = document.getElementById("more-sessions");
+        MORE_SESSIONS.forEach(function (s) {
+          const a = document.createElement("a");
+          a.href = "https://www.youtube.com/watch?v=" + s.id;
+          a.target = "_blank";
+          a.rel = "noopener";
+          const img = document.createElement("img");
+          img.src = "https://i.ytimg.com/vi/" + s.id + "/hqdefault.jpg";
+          img.alt = s.title;
+          img.loading = "lazy";
+          a.appendChild(img);
+          a.appendChild(document.createTextNode(s.title));
+          grid.appendChild(a);
+        });
+        document.getElementById("more-wrap").hidden = false;
+      }
+
+      window.addEventListener("load", function () {
         document.body.classList.add("fade-in");
       });
+      // Fallback so the page never stays invisible if an embed is slow
+      setTimeout(function () {
+        document.body.classList.add("fade-in");
+      }, 1500);
     </script>
   </body>
 </html>
